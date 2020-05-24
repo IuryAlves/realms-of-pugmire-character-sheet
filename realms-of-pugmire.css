@@ -154,19 +154,19 @@ input {
   border: 0.5px solid black;
 }
 
-.grid-3x6 {
+.sheet-grid-3x6 {
   display: grid;
   grid-template-columns: 20px 100px 150px;
   grid-template-rows: repeat(6, 1fr);
 }
 
-.grid-2x3 {
+.sheet-grid-2x3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 
-.grid-2x2 {
+.sheet-grid-2x2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr); 
