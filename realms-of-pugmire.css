@@ -29,9 +29,12 @@
   /*border: 2px solid blue;*/
 }
 
-.sheet-table-input {
-  width: 90%;
+
+.sheet-weapons-table {
+  table-layout: fixed;
+  width: 100%;
 }
+
 
 textarea {
   width: 100%;
@@ -58,6 +61,10 @@ input {
 
 .sheet-input-large {
   width: 70%;
+}
+
+.sheet-input-xlarge {
+  width: 90%;
 }
 
 .sheet-logo-image {
