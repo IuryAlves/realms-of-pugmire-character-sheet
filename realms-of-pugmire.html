@@ -1,0 +1,353 @@
+<link rel="stylesheet" href="realms-of-pugmire.css" />
+<link rel="stylesheet" href="pugmire-theme.css" />
+<div class="sheet-sheet">
+  <div class="sheet-logo">
+    <img class="sheet-logo-image" src="https://static1.squarespace.com/static/57f7a70b37c581d5a1b94bb6/t/5d39abd5ec4b31000132d478/1578945007270/">
+  </div>
+  <div class="sheet-info">
+    <label>
+      Name:
+    </label>
+    <input class="sheet-input sheet-input-large" type="text" name="attr_character_name" />
+    <label>
+      Calling and Level:
+    </label>
+    <input class="sheet-input sheet-input-large" type="text" name="attr_calling_level" />
+    <label>
+      Subrace - Breed, House, etc:
+    </label>
+    <input class="sheet-input sheet-input-large" type="text" name="attr_breed" />
+    <label>
+      Family:
+    </label>
+    <input class="sheet-input sheet-input-large" type="text" name="attr_family" />
+    <label>
+      Background:
+    </label>
+    <input class="sheet-input sheet-input-large" type="text" name="attr_background" />
+  </div>
+  <div class="sheet-attributes">
+    <label>
+      Strength
+    </label>
+    <input type="number" class="sheet-input-large" name="attr_str" value="10" />
+    <label class="sheet-attr">
+      Str Mod.
+    </label>
+    <input type="number" class="sheet-input-large" disabled="true" name="attr_str_mod" value="floor((@{str}-10)/2)" />
+    <label class="sheet-attr">
+      Dexterity
+    </label>
+    <input type="number" class="sheet-input-large" name="attr_dex" value="10" />
+    <label class="sheet-attr">
+      Dex Mod.
+    </label>
+    <input type="number" class="sheet-input-large" disabled="true" name="attr_dex_mod" value="floor((@{dex}-10)/2)" />
+    <label class="sheet-attr">
+      Constitution
+    </label>
+    <input type="number" class="sheet-input-large" name="attr_con" value="10" />
+    <label class="sheet-attr">
+      Con Mod.
+    </label>
+    <input type="number" class="sheet-input-large" disabled="true" name="attr_con_mod" value="floor((@{con}-10)/2)" />
+    <label class="sheet-attr">
+      Intelligence
+    </label>
+    <input type="number" class="sheet-input-large" name="attr_int" value="10" />
+    <label class="sheet-attr">
+      Int Mod.
+    </label>
+    <input type="number" class="sheet-input-large" disabled="true" name="attr_int_mod" value="floor((@{int}-10)/2)" />
+    <label class="sheet-attr">
+      Wisdom
+    </label>
+    <input type="number" class="sheet-input-large" name="attr_wis" value="10" />
+    <label class="sheet-attr">
+      Wis Mod.
+    </label>
+    <input type="number" class="sheet-input-large" disabled="true" name="attr_wis_mod" value="floor((@{wis}-10)/2)" />
+    <label class="sheet-attr">
+      Charisma
+    </label>
+    <input type="number" class="sheet-input-large" name="attr_cha" value="10" />
+    <label class="sheet-attr">
+      Cha Mod.
+    </label>
+    <input type="number" disabled="true" class="sheet-input-large" name="attr_cha_mod" value="floor((@{cha}-10)/2)" />
+  </div>
+  <div class="sheet-proficiency"><label>Proficiency Bonus </label><input type="number" name="attr_prof" /><br /></div>
+  <div class="sheet-saving-throw">
+    <h2>Saving Throws</h2>
+    <div class="grid-3x6">
+      <input type="checkbox" name="sav_thr_str" value="@{prof}" />
+      <label>Strength </label>
+      <input class="sheet-input-small" type="number" name="sav_thr_str_val" value="@{str_mod}" />
+      <input type="checkbox" name="sav_thr_dex" value="@{prof}" />
+      <label>Dexterity </label>
+      <input class="sheet-input-small" type="number" name="sav_thr_dex_val" value="dex_mod" />
+      <input type="checkbox" name="sav_thr_con" value="@{prof}" />
+      <label>Constitution </label>
+      <input class="sheet-input-small" type="number" name="sav_thr_con_val" />
+      <input type="checkbox" name="sav_thr_int" value="@{prof}" />
+      <label>Intelligence </label>
+      <input class="sheet-input-small" type="number" name="sav_thr_int_val" />
+      <input type="checkbox" name="sav_thr_wis" value="@{prof}" />
+      <label>Wisdom </label>
+      <input class="sheet-input-small" type="number" name="sav_thr_wis_val" />
+      <input type="checkbox" name="sav_thr_cha" value="@{prof}" />
+      <label>Charisma </label>
+      <input class="sheet-input-small" type="number" name="sav_thr_cha_val" />
+    </div>
+  </div>
+  <div class="sheet-defense">
+    <div class='grid-2x3'>
+      <label>Defense </label>
+      <input class="sheet-input-small" type="text" name="attr_defense" />
+      <label>Initiative </label>
+      <input class="sheet-input-small" type="text" name="attr_init" />
+      <label>Speed </label>
+      <input class="sheet-input-small" type="text" name="attr_speed" />
+    </div>
+  </div>
+  <div class="sheet-skills">
+    <h2>Skills</h2>
+    <textarea></textarea>
+  </div>
+  <div class="sheet-stamina-points">
+    <label>Stamina Points</label><br />
+    <div class="grid-2x2">
+      <label>Current</label>
+      <label>Max</label>
+      <input class="sheet-input-small" type="text" name="attr_sp" />
+      <input class="sheet-input-small" type="text" name="attr_sp_max" />
+    </div>
+  </div>
+  <div class="sheet-stamina-dice">
+    <label>Stamina Dice</label>
+    <input class="sheet-input-small" type="text" name="attr_stamina_dice" />
+  </div>
+  <div class="sheet-death-save-failure">
+    <label>Death save failure</label>
+    <input type="checkbox" name="attr_death_save_failure" />
+    <input type="checkbox" name="attr_death_save_failure" />
+    <input type="checkbox" name="attr_death_save_failure" />
+  </div>
+  <div class="sheet-personality">
+    <h2>Personality Traits</h2>
+    <label>
+      <bold>Ideal</bold>
+      - What is most important to me ...
+    </label>
+    <br />
+    <textarea></textarea>
+    <br />
+    <select id="personality">
+      <option value="bond">
+        <label>
+          <bold>Bond</bold>
+          - I am inspired by my bond to ...
+        </label>
+      </option>
+      <option value="mystery">
+        <label>
+          <bold>Mystery</bold>
+          - No one knows about...
+        </label>
+      </option>
+    </select>
+    <br />
+    <textarea></textarea>
+    <br />
+    <label>
+      <bold>Ideal</bold>
+      No matter what, I just can't ...
+    </label>
+    <br />
+    <textarea></textarea>
+    <br />
+  </div>
+  <div class="sheet-rucksack">
+    <label> Rucksack and equipment</label>
+    <textarea name="att_rucksack_equipment"></textarea>
+  </div>
+  <div class="sheet-spell-slots">
+    <label>Spell Slots</label><br />
+    <div class="grid-2x2">
+      <label>Current</label>
+      <label>Max</label>
+      <input class="sheet-input" type="text" name="attr_ss" />
+      <input class="sheet-input" type="text" name="attr_ss_max" />
+    </div>
+  </div>
+
+  <div class="sheet-tricks">
+    <h2>
+      Knacks - Tricks, Secrets, etc:
+    </h2>
+    <textarea></textarea>
+  </div>
+  <div class="sheet-spell">
+    <h2>
+      Spells
+    </h2>
+    <textarea></textarea>
+  </div>
+  <div class="sheet-background">
+    <h2>
+      Background
+    </h2>
+    <textarea></textarea>
+  </div>
+
+  <div class="sheet-descriptions">
+    <table>
+      <tr>
+        <th>Attack</th>
+        <th>Roll</th>
+        <th>DMG</th>
+        <th>Type/Quality</th>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

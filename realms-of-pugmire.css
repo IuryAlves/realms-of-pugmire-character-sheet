@@ -1,0 +1,178 @@
+.sheet-sheet {
+  display: grid;
+  /*background-color: #f7f3e7;*/
+
+  grid-gap: 8px;
+  grid-template-areas:
+    ". logo logo logo info info info info "
+    "attributes attributes  proficiency proficiency descriptions descriptions descriptions descriptions "
+    "attributes attributes  saving-throw saving-throw descriptions descriptions descriptions descriptions "
+    "attributes attributes  defense defense descriptions descriptions descriptions descriptions "
+    "attributes attributes  defense defense descriptions descriptions descriptions descriptions "
+    "attributes attributes  defense defense skills skills skills skills "
+    "attributes attributes  stamina stamina skills skills skills skills "
+    "attributes attributes  dice dice skills skills skills skills "
+    "attributes attributes  death-save-failure death-save-failure personality personality personality personality "
+    "rucksack rucksack rucksack rucksack  personality personality personality personality "
+    "tricks tricks tricks tricks  spell-slots spell-slots spell-slots spell-slots "
+    "tricks tricks tricks tricks  spell spell spell spell "
+    "back back back back spell spell spell spell "
+    "back back back back sketch sketch sketch  sketch ";
+  grid-template-columns: 1fr repeat(6, minmax(100px, 1fr)) 4fr;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+.sheet-logo {
+  grid-area: logo;
+  /*border: 2px solid blue;*/
+}
+
+.sheet-table-input {
+  width: 90%;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: 50%;
+}
+
+input {
+  border: 1px solid black;
+  margin: 0.1em;
+}
+
+.sheet-input {
+  max-width: 100%;
+  float: right;
+  clear: both;
+}
+
+.sheet-input-small {
+  width: 30%;
+
+}
+
+.sheet-input-large {
+  width: 70%;
+}
+
+.sheet-logo-image {
+  width: 80%;
+}
+
+.sheet-sketch {
+  grid-area: sketch;
+  border: 0.5px solid black;
+}
+
+.sheet-background {
+  grid-area: back;
+  border: 0.5px solid black;
+}
+
+.sheet-spell {
+  grid-area: spell;
+  border: 0.5px solid black;
+}
+
+.sheet-spell-slots {
+  grid-area: spell-slots;
+  border: 0.5px solid black;
+}
+
+.sheet-tricks {
+  grid-area: tricks;
+  border: 0.5px solid black;
+}
+
+.sheet-rucksack {
+  grid-area: rucksack;
+  border: 0.5px solid black;
+}
+
+.sheet-info {
+  grid-area: info;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: 0.5px solid black;
+  float: right;
+}
+
+.sheet-personality {
+  grid-area: personality;
+  border: 0.5px solid black;
+}
+
+.sheet-death-save-failure {
+  grid-area: death-save-failure;
+  border: 0.5px solid black;
+}
+
+.sheet-skills {
+  grid-area: skills;
+  border: 0.5px solid black;
+}
+
+.sheet-stamina-dice {
+  grid-area: dice;
+  border: 0.5px solid black;
+}
+
+.sheet-stamina-points {
+  grid-area: stamina;
+  border: 0.5px solid black;
+}
+
+.sheet-proficiency {
+  grid-area: proficiency;
+  border: 0.5px solid black;
+}
+.sheet-attributes {
+  grid-area: attributes;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 0.5px solid black;
+}
+
+.sheet-attributes > input {
+  height: 40%;
+}
+
+.sheet-defense {
+  grid-area: defense;
+  border: 0.5px solid black;
+}
+
+.sheet-saving-throw {
+  grid-area: saving-throw;
+  border: 0.5px solid black;
+}
+
+.grid-3x6 {
+  display: grid;
+  grid-template-columns: 20px 100px 150px;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.grid-2x3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
+}
+
+.sheet-descriptions {
+  grid-area: descriptions;
+  border: 0.5px solid black;
+}
