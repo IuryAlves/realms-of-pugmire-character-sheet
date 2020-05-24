@@ -26,55 +26,85 @@
     <input class="sheet-input sheet-input-xlarge" type="text" name="attr_background" />
   </div>
   <div class="sheet-attributes sheet-rounded-border">
-    <div class="sheet-grid-2x6">
-      <label>
-        Strength
-      </label>
-      <label class="sheet-attr">
-        Str Mod.
-      </label>
-      <input type="number" class="sheet-input-large" name="attr_str" value="10" />
-      <input type="number" class="sheet-input-large" disabled="true" name="attr_str_mod" value="floor((@{str}-10)/2)" />
-      <label class="sheet-attr">
-        Dexterity
-      </label>
-      <label class="sheet-attr">
-        Dex Mod.
-      </label>
-      <input type="number" class="sheet-input-large" name="attr_dex" value="10" />
-      <input type="number" class="sheet-input-large" disabled="true" name="attr_dex_mod" value="floor((@{dex}-10)/2)" />
-      <label class="sheet-attr">
-        Constitution
-      </label>
-      <label class="sheet-attr">
-        Con Mod.
-      </label>
-      <input type="number" class="sheet-input-large" name="attr_con" value="10" />
-      <input type="number" class="sheet-input-large" disabled="true" name="attr_con_mod" value="floor((@{con}-10)/2)" />
-      <label class="sheet-attr">
-        Intelligence
-      </label>
-      <label class="sheet-attr">
-        Int Mod.
-      </label>
-      <input type="number" class="sheet-input-large" name="attr_int" value="10" />
-      <input type="number" class="sheet-input-large" disabled="true" name="attr_int_mod" value="floor((@{int}-10)/2)" />
-      <label class="sheet-attr">
-        Wisdom
-      </label>
-      <label class="sheet-attr">
-        Wis Mod.
-      </label>
-      <input type="number" class="sheet-input-large" name="attr_wis" value="10" />
-      <input type="number" class="sheet-input-large" disabled="true" name="attr_wis_mod" value="floor((@{wis}-10)/2)" />
-      <label class="sheet-attr">
-        Charisma
-      </label>
-      <label class="sheet-attr">
-        Cha Mod.
-      </label>
-      <input type="number" class="sheet-input-large" name="attr_cha" value="10" />
-      <input type="number" disabled="true" class="sheet-input-large" name="attr_cha_mod" value="floor((@{cha}-10)/2)" />
+    <div class="sheet-grid-1x6 sheet-center-grid">
+      <div class="sheet-shield">
+        <div class="sheet-shield-title">
+          <label class="sheet-attr">
+            Str
+          </label>  
+        </div>
+        <div class="sheet-attr">
+          <input type="number" class="sheet-input-large sheet-input-no-border" name="attr_str" value="10" />
+        </div>
+        <div class="sheet-shield-mod">
+          <input type="number" class="sheet-input-large sheet-shield-mod-input" disabled="true" name="attr_str_mod" value="floor((@{str}-10)/2)" />
+        </div>
+      </div>
+      <div class="sheet-shield">
+        <div class="sheet-shield-title">
+          <label class="sheet-attr">
+            Dex
+          </label>
+        </div>
+        <div class="sheet-attr">
+          <input type="number" class="sheet-input-large sheet-input-no-border" name="attr_dex" value="10" />
+        </div>
+        <div class="shhet-shield-mod">
+          <input type="number" class="sheet-input-large sheet-shield-mod-input" disabled="true" name="attr_dex_mod" value="floor((@{dex}-10)/2)" />
+        </div>
+      </div>
+      <div class="sheet-shield">
+        <div class="sheet-shield-title">
+          <label class="sheet-attr">
+            Con
+          </label>
+        </div>
+        <div class="sheet-attr">
+          <input type="number" class="sheet-input-large sheet-input-no-border" name="attr_con" value="10" />
+        </div>
+        <div class="shhet-shield-mod">
+          <input type="number" class="sheet-input-large sheet-shield-mod-input " disabled="true" name="attr_con_mod" value="floor((@{con}-10)/2)" />
+        </div>
+      </div>
+      <div class="sheet-shield">
+        <div class="sheet-shield-title">
+          <label class="sheet-attr">
+            Int
+          </label>
+        </div>
+        <div class="sheet-attr">
+          <input type="number" class="sheet-input-large sheet-input-no-border" name="attr_int" value="10" />
+        </div>
+        <div class="shhet-shield-mod">
+          <input type="number" class="sheet-input-large sheet-shield-mod-input " disabled="true" name="attr_int_mod" value="floor((@{int}-10)/2)" />
+        </div>
+      </div>
+      <div class="sheet-shield">
+        <div class="sheet-shield-title">
+          <label class="sheet-attr"> 
+            Wis
+          </label>
+        </div>
+        <div class="sheet-attr">
+          <input type="number" class="sheet-input-large sheet-input-no-border" name="attr_wis" value="10" />
+        </div>
+        <div class="shhet-shield-mod">
+          <input type="number" class="sheet-input-large sheet-shield-mod-input " disabled="true" name="attr_wis_mod" value="floor((@{wis}-10)/2)" />
+        </div>
+      </div>
+      <div class="sheet-shield">
+        <div class="sheet-shield-title">
+          <label class="sheet-attr">
+            Cha
+          </label>
+        </div>
+        <div class="sheet-attr">
+          <input type="number" class="sheet-input-large sheet-input-no-border" name="attr_cha" value="10" />
+        </div>
+        <div class="shhet-shield-mod">
+          <input type="number" class="sheet-input-large sheet-shield-mod-input " disabled="true" name="attr_cha_mod" value="floor((@{cha}-10)/2)" />
+        </div>
+      </div>
     </div>
   </div>
   <div class="sheet-proficiency sheet-rounded-border">
