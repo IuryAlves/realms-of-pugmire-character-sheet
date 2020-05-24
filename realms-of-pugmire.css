@@ -26,7 +26,6 @@
 
 .sheet-logo {
   grid-area: logo;
-  /*border: 2px solid blue;*/
 }
 
 .sheet-weapons-table {
@@ -35,6 +34,10 @@
   margin-left: 5px;
 }
 
+.sheet-rounded-border {
+  border: 1px solid black;
+  border-radius: 10px;
+}
 
 textarea {
   width: 100%;
@@ -85,32 +88,26 @@ label, h2 {
 
 .sheet-sketch {
   grid-area: sketch;
-  border: 0.5px solid black;
 }
 
 .sheet-background {
   grid-area: back;
-  border: 0.5px solid black;
 }
 
 .sheet-spell {
   grid-area: spell;
-  border: 0.5px solid black;
 }
 
 .sheet-spell-slots {
   grid-area: spell-slots;
-  border: 0.5px solid black;
 }
 
 .sheet-tricks {
   grid-area: tricks;
-  border: 0.5px solid black;
 }
 
 .sheet-rucksack {
   grid-area: rucksack;
-  border: 0.5px solid black;
 }
 
 .sheet-info {
@@ -118,42 +115,34 @@ label, h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  border: 0.5px solid black;
   float: right;
 }
 
 .sheet-personality {
   grid-area: personality;
-  border: 0.5px solid black;
 }
 
 .sheet-death-save-failure {
   grid-area: death-save-failure;
-  border: 0.5px solid black;
 }
 
 .sheet-skills {
   grid-area: skills;
-  border: 0.5px solid black;
 }
 
 .sheet-stamina-dice {
   grid-area: dice;
-  border: 0.5px solid black;
 }
 
 .sheet-stamina-points {
   grid-area: stamina;
-  border: 0.5px solid black;
 }
 
 .sheet-proficiency {
   grid-area: proficiency;
-  border: 0.5px solid black;
 }
 .sheet-attributes {
   grid-area: attributes;
-  border: 0.5px solid black;
 }
 
 .sheet-attributes > input {
@@ -162,12 +151,10 @@ label, h2 {
 
 .sheet-defense {
   grid-area: defense;
-  border: 0.5px solid black;
 }
 
 .sheet-saving-throw {
   grid-area: saving-throw;
-  border: 0.5px solid black;
 }
 
 .sheet-grid-2x1 {
@@ -203,5 +190,4 @@ label, h2 {
 
 .sheet-descriptions {
   grid-area: descriptions;
-  border: 0.5px solid black;
 }
