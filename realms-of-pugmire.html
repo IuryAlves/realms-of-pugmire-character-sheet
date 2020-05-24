@@ -8,23 +8,23 @@
     <label>
       Name:
     </label>
-    <input class="sheet-input sheet-input-large" type="text" name="attr_character_name" />
+    <input class="sheet-input sheet-input-xlarge" type="text" name="attr_character_name" />
     <label>
       Calling and Level:
     </label>
-    <input class="sheet-input sheet-input-large" type="text" name="attr_calling_level" />
+    <input class="sheet-input sheet-input-xlarge" type="text" name="attr_calling_level" />
     <label>
       Subrace - Breed, House, etc:
     </label>
-    <input class="sheet-input sheet-input-large" type="text" name="attr_breed" />
+    <input class="sheet-input sheet-input-xlarge" type="text" name="attr_breed" />
     <label>
       Family:
     </label>
-    <input class="sheet-input sheet-input-large" type="text" name="attr_family" />
+    <input class="sheet-input sheet-input-xlarge" type="text" name="attr_family" />
     <label>
       Background:
     </label>
-    <input class="sheet-input sheet-input-large" type="text" name="attr_background" />
+    <input class="sheet-input sheet-input-xlarge" type="text" name="attr_background" />
   </div>
   <div class="sheet-attributes">
     <div class="sheet-grid-2x6">
@@ -78,7 +78,10 @@
       <input type="number" disabled="true" class="sheet-input-large" name="attr_cha_mod" value="floor((@{cha}-10)/2)" />
     </div>
   </div>
-  <div class="sheet-proficiency"><label>Proficiency Bonus </label><input type="number" name="attr_prof" /><br /></div>
+  <div class="sheet-proficiency">
+    <label>Proficiency Bonus </label>
+    <input class="sheet-input-small sheet-right" type="number" name="attr_prof" />
+  </div>
   <div class="sheet-saving-throw">
     <h2>Saving Throws</h2>
     <div class="sheet-grid-3x6">
@@ -127,13 +130,17 @@
   </div>
   <div class="sheet-stamina-dice">
     <label>Stamina Dice</label>
-    <input class="sheet-input-small" type="text" name="attr_stamina_dice" />
+    <input class="sheet-input-small sheet-right" type="text" name="attr_stamina_dice" />
   </div>
   <div class="sheet-death-save-failure">
-    <label>Death save failure</label>
-    <input type="checkbox" name="attr_death_save_failure" />
-    <input type="checkbox" name="attr_death_save_failure" />
-    <input type="checkbox" name="attr_death_save_failure" />
+    <div class="sheet-grid-2x1">
+      <label>Death save failure</label>
+      <div>
+        <input type="checkbox" name="attr_death_save_failure" />
+        <input type="checkbox" name="attr_death_save_failure" />
+        <input type="checkbox" name="attr_death_save_failure" />
+      </div>
+    </div>
   </div>
   <div class="sheet-personality">
     <h2>Personality Traits</h2>

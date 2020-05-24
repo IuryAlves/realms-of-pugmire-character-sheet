@@ -46,12 +46,24 @@ textarea {
 input {
   border: 1px solid black;
   margin: 0.1em;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+
+label, h2 {
+  margin-left: 5px;
 }
 
 .sheet-input {
   max-width: 100%;
   float: right;
   clear: both;
+}
+
+.sheet-right {
+  float: right;
 }
 
 .sheet-input-small {
@@ -156,6 +168,12 @@ input {
 .sheet-saving-throw {
   grid-area: saving-throw;
   border: 0.5px solid black;
+}
+
+.sheet-grid-2x1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .sheet-grid-3x6 {
