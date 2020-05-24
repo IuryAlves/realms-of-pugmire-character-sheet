@@ -134,14 +134,11 @@ input {
 }
 .sheet-attributes {
   grid-area: attributes;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   border: 0.5px solid black;
 }
 
 .sheet-attributes > input {
-  height: 40%;
+  height: 80%;
 }
 
 .sheet-defense {
@@ -170,6 +167,13 @@ input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr); 
+}
+
+.sheet-grid-2x6 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .sheet-descriptions {

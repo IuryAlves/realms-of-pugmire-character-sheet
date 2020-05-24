@@ -27,54 +27,56 @@
     <input class="sheet-input sheet-input-large" type="text" name="attr_background" />
   </div>
   <div class="sheet-attributes">
-    <label>
-      Strength
-    </label>
-    <input type="number" class="sheet-input-large" name="attr_str" value="10" />
-    <label class="sheet-attr">
-      Str Mod.
-    </label>
-    <input type="number" class="sheet-input-large" disabled="true" name="attr_str_mod" value="floor((@{str}-10)/2)" />
-    <label class="sheet-attr">
-      Dexterity
-    </label>
-    <input type="number" class="sheet-input-large" name="attr_dex" value="10" />
-    <label class="sheet-attr">
-      Dex Mod.
-    </label>
-    <input type="number" class="sheet-input-large" disabled="true" name="attr_dex_mod" value="floor((@{dex}-10)/2)" />
-    <label class="sheet-attr">
-      Constitution
-    </label>
-    <input type="number" class="sheet-input-large" name="attr_con" value="10" />
-    <label class="sheet-attr">
-      Con Mod.
-    </label>
-    <input type="number" class="sheet-input-large" disabled="true" name="attr_con_mod" value="floor((@{con}-10)/2)" />
-    <label class="sheet-attr">
-      Intelligence
-    </label>
-    <input type="number" class="sheet-input-large" name="attr_int" value="10" />
-    <label class="sheet-attr">
-      Int Mod.
-    </label>
-    <input type="number" class="sheet-input-large" disabled="true" name="attr_int_mod" value="floor((@{int}-10)/2)" />
-    <label class="sheet-attr">
-      Wisdom
-    </label>
-    <input type="number" class="sheet-input-large" name="attr_wis" value="10" />
-    <label class="sheet-attr">
-      Wis Mod.
-    </label>
-    <input type="number" class="sheet-input-large" disabled="true" name="attr_wis_mod" value="floor((@{wis}-10)/2)" />
-    <label class="sheet-attr">
-      Charisma
-    </label>
-    <input type="number" class="sheet-input-large" name="attr_cha" value="10" />
-    <label class="sheet-attr">
-      Cha Mod.
-    </label>
-    <input type="number" disabled="true" class="sheet-input-large" name="attr_cha_mod" value="floor((@{cha}-10)/2)" />
+    <div class="sheet-grid-2x6">
+      <label>
+        Strength
+      </label>
+      <label class="sheet-attr">
+        Str Mod.
+      </label>
+      <input type="number" class="sheet-input-large" name="attr_str" value="10" />
+      <input type="number" class="sheet-input-large" disabled="true" name="attr_str_mod" value="floor((@{str}-10)/2)" />
+      <label class="sheet-attr">
+        Dexterity
+      </label>
+      <label class="sheet-attr">
+        Dex Mod.
+      </label>
+      <input type="number" class="sheet-input-large" name="attr_dex" value="10" />
+      <input type="number" class="sheet-input-large" disabled="true" name="attr_dex_mod" value="floor((@{dex}-10)/2)" />
+      <label class="sheet-attr">
+        Constitution
+      </label>
+      <label class="sheet-attr">
+        Con Mod.
+      </label>
+      <input type="number" class="sheet-input-large" name="attr_con" value="10" />
+      <input type="number" class="sheet-input-large" disabled="true" name="attr_con_mod" value="floor((@{con}-10)/2)" />
+      <label class="sheet-attr">
+        Intelligence
+      </label>
+      <label class="sheet-attr">
+        Int Mod.
+      </label>
+      <input type="number" class="sheet-input-large" name="attr_int" value="10" />
+      <input type="number" class="sheet-input-large" disabled="true" name="attr_int_mod" value="floor((@{int}-10)/2)" />
+      <label class="sheet-attr">
+        Wisdom
+      </label>
+      <label class="sheet-attr">
+        Wis Mod.
+      </label>
+      <input type="number" class="sheet-input-large" name="attr_wis" value="10" />
+      <input type="number" class="sheet-input-large" disabled="true" name="attr_wis_mod" value="floor((@{wis}-10)/2)" />
+      <label class="sheet-attr">
+        Charisma
+      </label>
+      <label class="sheet-attr">
+        Cha Mod.
+      </label>
+      <input type="number" class="sheet-input-large" name="attr_cha" value="10" />
+      <input type="number" disabled="true" class="sheet-input-large" name="attr_cha_mod" value="floor((@{cha}-10)/2)" />
+    </div>
   </div>
   <div class="sheet-proficiency"><label>Proficiency Bonus </label><input type="number" name="attr_prof" /><br /></div>
   <div class="sheet-saving-throw">
