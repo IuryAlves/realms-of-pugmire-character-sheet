@@ -1,6 +1,5 @@
 .sheet-sheet {
   display: grid;
-  background-color: #f7f3e7;
 
   grid-gap: 8px;
   grid-template-areas:
@@ -39,7 +38,7 @@
   width: 70px;
   height: 75px;
   display: grid;
-  grid-template-rows: 2em 3em ;
+  grid-template-rows: 2em 2em;
   grid-template-columns: 1fr;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -71,7 +70,7 @@
   border: 1px solid black;
   border-radius: 10px;
   width: 50%;
-  margin-left: 13px;
+  margin-left: 9px;
   margin-top: -7px;
 }
 
