@@ -37,9 +37,8 @@
   border: 1px solid black;
   width: 70px;
   height: 75px;
-  display: grid;
-  grid-template-rows: 2em 2em;
-  grid-template-columns: 1fr;
+  display: block;
+  position: relative;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -62,7 +61,14 @@
 }
 
 .sheet-shield-mod {
+  position: absolute;
+  justify-content: center;
   text-align: center;
+  display: flex;
+  bottom: -10px; /* metade da altura */
+  left: 0;
+  height: 20px;
+  width: 100%;
 }
 
 .sheet-shield-mod-input {
