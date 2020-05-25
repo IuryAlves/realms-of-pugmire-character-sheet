@@ -1,6 +1,6 @@
 .sheet-sheet {
   display: grid;
-  /*background-color: #f7f3e7;*/
+  background-color: #f7f3e7;
 
   grid-gap: 8px;
   grid-template-areas:
