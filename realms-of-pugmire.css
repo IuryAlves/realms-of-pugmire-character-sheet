@@ -1,7 +1,6 @@
 .sheet-sheet {
   display: grid;
-
-  grid-gap: 8px;
+  grid-gap: 10px;
   grid-template-areas:
     ". logo logo logo info info info info "
     "attributes attributes  proficiency proficiency descriptions descriptions descriptions descriptions "
@@ -15,13 +14,13 @@
     "rucksack rucksack rucksack rucksack  personality personality personality personality "
     "tricks tricks tricks tricks  spell-slots spell-slots spell-slots spell-slots "
     "tricks tricks tricks tricks  spell spell spell spell "
-    "back back back back spell spell spell spell "
-    "back back back back sketch sketch sketch  sketch ";
-  grid-template-columns: 1fr repeat(6, minmax(100px, 1fr)) 4fr;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+    "back back back back spell spell spell spell ";
+  grid-template-columns: 1fr repeat(5, minmax(100px, 1fr)) 4fr;
 }
 
+body {
+  margin-bottom: 10px;
+}
 
 .sheet-attr {
   text-align: center;
@@ -95,11 +94,22 @@
   border-radius: 10px;
 }
 
-textarea {
+.sheet-textarea {
   width: 100%;
+  height: 91%;
   box-sizing: border-box;
   border: 1px solid black;
-  height: 30%;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-attachment: local;
+  background-image:
+  linear-gradient(to right, white 10px, transparent 10px),
+  linear-gradient(to left, white 10px, transparent 10px),
+  repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
+  line-height: 31px;
 }
 
 input {
@@ -151,6 +161,11 @@ label, h2 {
   grid-area: back;
 }
 
+
+.sheet-background > textarea {
+  height: 250px;
+}
+
 .sheet-spell {
   grid-area: spell;
 }
@@ -161,6 +176,19 @@ label, h2 {
 
 .sheet-tricks {
   grid-area: tricks;
+  height: 250px;
+  text-align: center;
+}
+
+.sheet-tricks > textarea {
+  height: 90%;
+}
+
+h3 {
+  text-align: center;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  margin-top: 2px;
 }
 
 .sheet-rucksack {
@@ -212,6 +240,13 @@ label, h2 {
 
 .sheet-saving-throw {
   grid-area: saving-throw;
+}
+
+.sheet-grid-1x3 {
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 10em);
 }
 
 .sheet-grid-2x1 {
