@@ -71,6 +71,12 @@ body {
   margin-left: 0px
 }
 
+.sheet-input-line {
+  border-right: none;
+  border-left: none;
+  border-top: none
+}
+
 .sheet-input-no-border {
   border: none;
   text-align: right;
