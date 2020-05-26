@@ -3,18 +3,18 @@
   grid-gap: 10px;
   grid-template-areas:
     ". logo logo logo info info info info "
-    "attributes attributes  proficiency proficiency descriptions descriptions descriptions descriptions "
-    "attributes attributes  saving-throw saving-throw descriptions descriptions descriptions descriptions "
-    "attributes attributes  defense defense descriptions descriptions descriptions descriptions "
-    "attributes attributes  defense defense descriptions descriptions descriptions descriptions "
-    "attributes attributes  defense defense skills skills skills skills "
-    "attributes attributes  stamina stamina skills skills skills skills "
-    "attributes attributes  dice dice skills skills skills skills "
-    "attributes attributes  death-save-failure death-save-failure personality personality personality personality "
+    "attributes attributes proficiency proficiency descriptions descriptions descriptions descriptions "
+    "attributes attributes saving-throw saving-throw descriptions descriptions descriptions descriptions "
+    "attributes attributes defense defense descriptions descriptions descriptions descriptions "
+    "attributes attributes defense defense descriptions descriptions descriptions descriptions "
+    "attributes attributes defense defense skills skills skills skills "
+    "attributes attributes stamina stamina skills skills skills skills "
+    "attributes attributes dice dice skills skills skills skills "
+    "attributes attributes death-save-failure death-save-failure personality personality personality personality "
     "rucksack rucksack rucksack rucksack  personality personality personality personality "
-    "tricks tricks tricks tricks  spell-slots spell-slots spell-slots spell-slots "
-    "tricks tricks tricks tricks  spell spell spell spell "
+    "tricks tricks tricks tricks spell-slots spell-slots spell-slots spell-slots "
     "tricks tricks tricks tricks spell spell spell spell ";
+
   grid-template-columns: 1fr repeat(5, minmax(100px, 1fr)) 4fr;
 }
 
