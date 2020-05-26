@@ -14,7 +14,7 @@
     "rucksack rucksack rucksack rucksack  personality personality personality personality "
     "tricks tricks tricks tricks  spell-slots spell-slots spell-slots spell-slots "
     "tricks tricks tricks tricks  spell spell spell spell "
-    "back back back back spell spell spell spell ";
+    "tricks tricks tricks tricks spell spell spell spell ";
   grid-template-columns: 1fr repeat(5, minmax(100px, 1fr)) 4fr;
 }
 
@@ -187,16 +187,8 @@ label, h2 {
   grid-area: sketch;
 }
 
-.sheet-background {
-  grid-area: back;
-}
-
-
-.sheet-background > textarea {
-  height: 250px;
-}
-
 .sheet-spell {
+  height: 330px;
   grid-area: spell;
 }
 
@@ -206,7 +198,7 @@ label, h2 {
 
 .sheet-tricks {
   grid-area: tricks;
-  height: 250px;
+  height: 450px;
   text-align: center;
 }
 
