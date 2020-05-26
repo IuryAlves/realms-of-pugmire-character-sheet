@@ -35,8 +35,7 @@ body {
 
 /* TODO: merge with sheet-attr */
 .sheet-center {
-    align-self: center;
-    text-align: center;
+    text-align: center !important;
 }
 
 .sheet-center-grid {
@@ -231,6 +230,11 @@ input {
 
 .sheet-stamina-dice {
   grid-area: dice;
+}
+
+.sheet-stamina-dice > label {
+  float: left;
+  width: 50%;
 }
 
 .sheet-stamina-points {
