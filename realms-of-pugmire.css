@@ -35,7 +35,8 @@ body {
 
 /* TODO: merge with sheet-attr */
 .sheet-center {
-    align-self: center
+    align-self: center;
+    text-align: center;
 }
 
 .sheet-attr {
@@ -152,10 +153,6 @@ input {
   text-align: center
 }
 
-label, h2 {
-  margin-left: 5px;
-}
-
 .sheet-input {
   max-width: 100%;
   float: right;
@@ -206,11 +203,10 @@ label, h2 {
   height: 88%;
 }
 
-h3 {
-  text-align: center;
+.sheet-content {
   margin-left: 5px;
-  margin-bottom: 0px;
-  margin-top: 2px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .sheet-rucksack {

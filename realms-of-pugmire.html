@@ -111,43 +111,43 @@
     <div>
       <input class="sheet-input-large sheet-left sheet-input-proficiency" type="number" name="attr_prof" />
     </div>
-    <label class="sheet-center">Proficiency Bonus </label>
+    <h4 class="sheet-center sheet-content">Proficiency Bonus </h4>
   </div>
   <div class="sheet-saving-throw sheet-rounded-border">
-    <h2>Saving Throws</h2>
+    <h3 class="sheet-content sheet-center">Saving Throws</h3>
     <div class="sheet-grid-3x6">
       <input type="checkbox" name="sav_thr_str" value="@{prof}" />
-      <label>Strength </label>
+      <label class="sheet-content">Strength </label>
       <input class="sheet-input-small" type="number" name="sav_thr_str_val" value="@{str_mod}" />
       <input type="checkbox" name="sav_thr_dex" value="@{prof}" />
-      <label>Dexterity </label>
+      <label class="sheet-content">Dexterity </label>
       <input class="sheet-input-small" type="number" name="sav_thr_dex_val" value="dex_mod" />
       <input type="checkbox" name="sav_thr_con" value="@{prof}" />
-      <label>Constitution </label>
+      <label class="sheet-content">Constitution </label>
       <input class="sheet-input-small" type="number" name="sav_thr_con_val" />
       <input type="checkbox" name="sav_thr_int" value="@{prof}" />
-      <label>Intelligence </label>
+      <label class="sheet-content">Intelligence </label>
       <input class="sheet-input-small" type="number" name="sav_thr_int_val" />
       <input type="checkbox" name="sav_thr_wis" value="@{prof}" />
-      <label>Wisdom </label>
+      <label class="sheet-content">Wisdom </label>
       <input class="sheet-input-small" type="number" name="sav_thr_wis_val" />
       <input type="checkbox" name="sav_thr_cha" value="@{prof}" />
-      <label>Charisma </label>
+      <label class="sheet-content">Charisma </label>
       <input class="sheet-input-small" type="number" name="sav_thr_cha_val" />
     </div>
   </div>
   <div class="sheet-defense sheet-rounded-border">
     <div class='sheet-grid-2x3'>
-      <label>Defense </label>
+      <label class="sheet-content">Defense </label>
       <input class="sheet-input-small" type="text" name="attr_defense" />
-      <label>Initiative </label>
+      <label class="sheet-content">Initiative </label>
       <input class="sheet-input-small" type="text" name="attr_init" />
-      <label>Speed </label>
+      <label class="sheet-content">Speed </label>
       <input class="sheet-input-small" type="text" name="attr_speed" />
     </div>
   </div>
   <div class="sheet-skills sheet-rounded-border">
-    <h3>Skills</h3>
+    <h3 class="sheet-content sheet-center">Skills</h3>
     <textarea class="sheet-textarea sheet-textarea-skills"></textarea>
   </div>
   <div class="sheet-stamina-points sheet-rounded-border">
@@ -174,7 +174,7 @@
     </div>
   </div>
   <div class="sheet-personality sheet-rounded-border">
-    <h3>Personality Traits</h3>
+    <h3 class="sheet-content sheet-center">Personality Traits</h3>
     <div class="sheet-grid-1x3">
       <div>
         <label>
@@ -210,27 +210,27 @@
     </div>
   </div>
   <div class="sheet-rucksack sheet-rounded-border">
-    <h3> Rucksack and equipment</h3>
+    <h3 class="sheet-content sheet-center"> Rucksack and equipment</h3>
     <textarea class="sheet-textarea sheet-textarea-big"></textarea>
   </div>
   <div class="sheet-spell-slots sheet-rounded-border">
-    <label>Spell Slots</label><br />
+    <label class="sheet-center">Spell Slots</label>
     <div class="sheet-grid-2x2">
-      <label>Current</label>
-      <label>Max</label>
+      <label class="sheet-center">Current</label>
+      <label class="sheet-center">Max</label>
       <input class="sheet-input-large" type="text" name="attr_ss" />
       <input class="sheet-input-large" type="text" name="attr_ss_max" />
     </div>
   </div>
 
   <div class="sheet-tricks sheet-rounded-border">
-    <h3>
+    <h3 class="sheet-content sheet-center">
       Knacks - Tricks, Secrets, etc:
     </h3>
     <textarea class="sheet-textarea sheet-textarea-medium"></textarea>
   </div>
   <div class="sheet-spell sheet-rounded-border">
-    <h3>
+    <h3 class="sheet-content sheet-center">
       Spells
     </h3>
     <textarea class="sheet-textarea sheet-textarea-big"></textarea>
@@ -238,10 +238,10 @@
   <div class="sheet-descriptions sheet-rounded-border">
     <table class="sheet-weapons-table">
       <tr>
-        <th>Attack</th>
-        <th>Roll</th>
-        <th>DMG</th>
-        <th>Type/Quality</th>
+        <th class="sheet-center">Attack</th>
+        <th class="sheet-center">Roll</th>
+        <th class="sheet-center">DMG</th>
+        <th class="sheet-center">Type/Quality</th>
       </tr>
       <tr>
         <td>
