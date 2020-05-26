@@ -24,12 +24,12 @@ body {
 
 .sheet-input-proficiency {
     margin-left: -5px;
-    margin-top: -6px;
+    margin-top: -8px;
     float: left;
-    height: 140%;
+    height: 140% !important;
     margin-bottom: 0px;
     border-radius: 50px;
-    border-right: 2px solid black;
+    border-right: 1px solid black;
     width: 100%;
 }
 
