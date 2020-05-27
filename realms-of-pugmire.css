@@ -23,7 +23,7 @@ body {
 }
 
 .sheet-input-proficiency {
-    margin-left: -5px;
+    margin-left: -4px;
     margin-top: -8px;
     float: left;
     height: 140% !important;
@@ -222,6 +222,7 @@ input {
 
 .sheet-death-save-failure {
   grid-area: death-save-failure;
+  text-align: center;
 }
 
 .sheet-skills {
@@ -269,7 +270,7 @@ input {
 
 .sheet-grid-2x1 {
   display: grid;
-  grid-template-columns: 4em 1fr;
+  grid-template-columns: 1em 16em;
   grid-template-rows: 1fr;
 }
 
@@ -300,4 +301,63 @@ input {
 
 .sheet-descriptions {
   grid-area: descriptions;
+}
+
+.sheet-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.sheet-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.sheet-checkmark {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.sheet-container:hover input ~ .sheet-checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.sheet-container input:checked ~ .sheet-checkmark {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.sheet-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.sheet-container input:checked ~ .sheet-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.sheet-container .sheet-checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
 }

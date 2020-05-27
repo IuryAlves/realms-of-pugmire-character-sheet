@@ -111,7 +111,7 @@
     <div>
       <input class="sheet-input-large sheet-left sheet-input-proficiency" type="number" name="attr_prof" />
     </div>
-    <h4 class="sheet-center sheet-content">Proficiency Bonus </h4>
+    <h4 class="sheet-center sheet-content">Proficiency Bonus</h4>
   </div>
   <div class="sheet-saving-throw sheet-rounded-border">
     <h3 class="sheet-content sheet-center">Saving Throws</h3>
@@ -174,13 +174,20 @@
     <input class="sheet-input-small sheet-right" type="text" name="attr_stamina_dice" />
   </div>
   <div class="sheet-death-save-failure sheet-rounded-border">
-    <div class="sheet-grid-2x1">
-      <label>Death save failure</label>
-      <div>
-        <input type="checkbox" name="attr_death_save_failure" />
-        <input type="checkbox" name="attr_death_save_failure" />
-        <input type="checkbox" name="attr_death_save_failure" />
-      </div>
+    <label>Death save failure</label>
+    <div>
+      <label class="sheet-container">
+        <input type="sheet-checkbox" name="attr_death_save_failure">
+        <span class="sheet-checkmark"></span>
+      </label>
+      <label class="sheet-container">
+        <input type="sheet-checkbox" name="attr_death_save_failure">
+        <span class="sheet-checkmark"></span>
+      </label>
+      <label class="sheet-container">
+        <input type="sheet-checkbox" name="attr_death_save_failure">
+        <span class="sheet-checkmark"></span>
+      </label>
     </div>
   </div>
   <div class="sheet-personality sheet-rounded-border">
