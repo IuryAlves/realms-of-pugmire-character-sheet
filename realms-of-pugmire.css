@@ -176,7 +176,10 @@ input {
 
 .sheet-input-small {
   width: 30%;
+}
 
+.sheet-input-top {
+  margin-top: 5px;
 }
 
 .sheet-input-large {
