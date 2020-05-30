@@ -153,7 +153,7 @@
   </div>
   <div class="sheet-skills sheet-rounded-border">
     <h3 class="sheet-content sheet-center">Skills</h3>
-    <textarea class="sheet-textarea sheet-textarea-skills"></textarea>
+    <textarea class="sheet-textarea sheet-textarea-skills" name="attr_skills"></textarea>
   </div>
   <div class="sheet-stamina-points sheet-rounded-border sheet-center">
     <label class="sheet-center">Stamina Points</label>
@@ -161,10 +161,10 @@
       <label class="sheet-center">Current</label>
       <label class="sheet-center">Max</label>
       <div>
-        <input class="sheet-input-small" type="text" name="attr_sp" />
+        <input class="sheet-input-small" type="text" name="attr_stamina" />
       </div>
       <div>
-        <input class="sheet-input-small" type="text" name="attr_sp_max" />
+        <input class="sheet-input-small" type="text" name="attr_stamina_max" />
       </div>
     </div>
   </div>
@@ -176,15 +176,15 @@
     <label>Death save failure</label>
     <div>
       <label class="sheet-container">
-        <input type="sheet-checkbox" name="attr_death_save_failure">
+        <input type="sheet-checkbox" name="attr_death_save_failure_1">
         <span class="sheet-checkmark"></span>
       </label>
       <label class="sheet-container">
-        <input type="sheet-checkbox" name="attr_death_save_failure">
+        <input type="sheet-checkbox" name="attr_death_save_failure_2">
         <span class="sheet-checkmark"></span>
       </label>
       <label class="sheet-container">
-        <input type="sheet-checkbox" name="attr_death_save_failure">
+        <input type="sheet-checkbox" name="attr_death_save_failure_3">
         <span class="sheet-checkmark"></span>
       </label>
     </div>
@@ -197,10 +197,10 @@
           <bold>Ideal</bold>
           - What is most important to me ...
         </label>
-        <textarea class="sheet-textarea sheet-textarea-traits"></textarea>
+        <textarea class="sheet-textarea sheet-textarea-traits" name="attr_traits_ideal"></textarea>
       </div>
       <div>
-        <select id="personality">
+        <select name="attr_personality_type">
           <option value="bond">
             <label>
               <bold>Bond</bold>
@@ -214,20 +214,20 @@
             </label>
           </option>
         </select>
-        <textarea class="sheet-textarea sheet-textarea-traits"></textarea>
+        <textarea class="sheet-textarea sheet-textarea-traits" name="attr_traits_personality"></textarea>
       </div>
       <div>
         <label class="sheet-content">
           <bold>Flaw</bold>
           No matter what, I just can't ...
         </label>
-        <textarea class="sheet-textarea sheet-textarea-traits"></textarea>
+        <textarea class="sheet-textarea sheet-textarea-traits" name="attr_traits_flaw"></textarea>
       </div>
     </div>
   </div>
   <div class="sheet-rucksack sheet-rounded-border">
     <h3 class="sheet-content sheet-center"> Rucksack and equipment</h3>
-    <textarea class="sheet-textarea sheet-textarea-big sheet-textarea-rucksack"></textarea>
+    <textarea class="sheet-textarea sheet-textarea-big sheet-textarea-rucksack" name="attr_rucksack"></textarea>
   </div>
   <div class="sheet-spell-slots sheet-rounded-border">
     <label class="sheet-center">Spell Slots</label>
@@ -247,13 +247,13 @@
     <h3 class="sheet-content sheet-center">
       Knacks - Tricks, Secrets, etc:
     </h3>
-    <textarea class="sheet-textarea sheet-textarea-medium"></textarea>
+    <textarea class="sheet-textarea sheet-textarea-medium" name="attr_tricks"></textarea>
   </div>
   <div class="sheet-spell sheet-rounded-border">
     <h3 class="sheet-content sheet-center">
       Spells
     </h3>
-    <textarea class="sheet-textarea sheet-textarea-big"></textarea>
+    <textarea class="sheet-textarea sheet-textarea-big" name="attr_spells"></textarea>
   </div>
   <div class="sheet-descriptions sheet-rounded-border">
     <table class="sheet-weapons-table">
@@ -265,142 +265,142 @@
       </tr>
       <tr>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_1" />
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_1"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_1"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_1"/>
         </td>
       </tr>
       <tr>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_2"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_2"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_2"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_2"/>
         </td>
       </tr>
       <tr>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_3"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_3"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_3"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_3"/>
         </td>
       </tr>
       <tr>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_4"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_4"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_4"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
-        </td>
-        <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_4"/>
         </td>
       </tr>
       <tr>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_5"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_5"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_5"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_5"/>
         </td>
       </tr>
       <tr>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_6"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_6"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_6"/>
         </td>
         <td>
-          <input class="sheet-input-xlarge" type="text" />
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_6"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_7"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_7"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_7"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_7"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_8"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_8"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_8"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_8"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_9"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_9"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_9"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_9"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_10"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_roll_10"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_10"/>
+        </td>
+        <td>
+          <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_10"/>
         </td>
       </tr>
     </table>
