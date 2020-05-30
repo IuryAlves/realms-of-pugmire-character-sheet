@@ -107,9 +107,16 @@ body {
 }
 
 .sheet-weapons-table {
-  table-layout: fixed;
   width: 98%;
   margin-left: 5px;
+}
+
+.sheet-weapons-table-roll {
+  width: 10%;
+}
+
+.sheet-weapons-table-dmg {
+  width: 12%;
 }
 
 .sheet-rounded-border {
