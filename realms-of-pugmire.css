@@ -308,10 +308,14 @@ input {
   grid-area: descriptions;
 }
 
-.sheet-container {
+.sheet-inline-checkboxes {
+  display: inline-flex;
+  margin-left: -20px;
+}
+
+.sheet-checkbox-container {
   display: inline-block;
   position: relative;
-  padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
@@ -322,7 +326,7 @@ input {
 }
 
 /* Hide the browser's default radio button */
-.sheet-container input {
+.sheet-checkbox-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -337,13 +341,21 @@ input {
   border-radius: 50%;
 }
 
+.sheet-checkbox-container:first-of-type {
+  padding-right: 50px;
+}
+
+.sheet-checkbox-container:last-of-type {
+  padding-left: 50px;
+}
+
 /* On mouse-over, add a grey background color */
-.sheet-container:hover input ~ .sheet-checkmark {
+.sheet-checkbox-container:hover input ~ .sheet-checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.sheet-container input:checked ~ .sheet-checkmark {
+.sheet-checkbox-container input:checked ~ .sheet-checkmark {
   background-color: black;
 }
 
@@ -355,12 +367,12 @@ input {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.sheet-container input:checked ~ .sheet-checkmark:after {
+.sheet-checkbox-container input:checked ~ .sheet-checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.sheet-container .sheet-checkmark:after {
+.sheet-checkbox-container .sheet-checkmark:after {
   top: 9px;
   left: 9px;
   width: 8px;
