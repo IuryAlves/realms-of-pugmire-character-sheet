@@ -65,6 +65,10 @@ body {
   margin-left: 0px
 }
 
+.sheet-input-disabled-transparent:disabled {
+  background-color: transparent;
+}
+
 .sheet-input-line {
   border-right: none;
   border-left: none;
