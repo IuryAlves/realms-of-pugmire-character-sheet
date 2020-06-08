@@ -55,6 +55,10 @@ body {
   border-bottom-right-radius: 10px;
 }
 
+.sheet-inline-items {
+  display: inline-flex;
+}
+
 .sheet-shield-title {
   text-align: center;
   border-bottom: 1px solid black;
@@ -175,7 +179,11 @@ input {
 }
 
 .sheet-input-small {
-  width: 30%;
+  width: 30% !important;
+}
+
+.sheet-input-medium {
+  width: 50%;
 }
 
 .sheet-input-top {

@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="realms-of-pugmire.css">
 <div class="sheet-sheet">
   <div class="sheet-logo">
     <img src="https://raw.githubusercontent.com/IuryAlves/realms-of-pugmire-character-sheet/master/logo.png">
@@ -10,9 +11,12 @@
     <label class="sheet-content">
       Calling and Level:
     </label>
-    <input class="sheet-input sheet-input-xlarge sheet-input-line" type="text" name="attr_calling_level" />
+    <div class="sheet-inline-items">
+      <input class="sheet-input sheet-input-medium sheet-input-line" type="text" name="attr_calling" />
+      <input class="sheet-input sheet-input-small sheet-input-line" type="number" name="attr_level" />
+    </div>
     <label class="sheet-content">
-      Subrace - Breed, House, etc:
+      Breed, House:
     </label>
     <input class="sheet-input sheet-input-xlarge sheet-input-line" type="text" name="attr_breed" />
     <label class="sheet-content">
@@ -46,7 +50,7 @@
           </label>
         </div>
         <div class="sheet-center">
-          <input type="number" class="sheet-input-large sheet-input-no-border sheet-input-disabled-transparent" disabled="true" name="attr_dex_mod" value="floor((@{dex}-10)/2)" />
+          <input type="number" class="sheet-input-large sheet-input-no-border sheet-input-disabled-transparent" disabled="true" name="attr_dexmod" value="floor((@{dex}-10)/2)" />
         </div>
         <div class="sheet-shield-mod">
           <input type="number" class="sheet-input-large sheet-shield-mod-input" name="attr_dex"/>
@@ -120,7 +124,7 @@
       <input class="sheet-input-small" type="number" disabled="true" name="attr_sav_thr_str_val" value="@{str_mod}+@{sav_thr_str}" />
       <input type="checkbox" name="attr_sav_thr_dex" value="@{prof}" />
       <label class="sheet-center">Dexterity</label>
-      <input class="sheet-input-small" type="number" disabled="true" name="attr_sav_thr_dex_val" value="@{dex_mod}+@{sav_thr_dex}" />
+      <input class="sheet-input-small" type="number" disabled="true" name="attr_sav_thr_dex_val" value="@{dexmod}+@{sav_thr_dex}" />
       <input type="checkbox" name="attr_sav_thr_con" value="@{prof}" />
       <label class="sheet-center">Constitution</label>
       <input class="sheet-input-small" type="number" disabled="true" name="attr_sav_thr_con_val" value="@{con_mod}+@{sav_thr_con}" />
