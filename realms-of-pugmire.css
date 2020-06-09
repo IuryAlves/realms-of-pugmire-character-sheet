@@ -129,6 +129,7 @@ body {
 }
 
 .sheet-textarea {
+  padding-left: 13px;
   width: 100%;
   height: 88%;
   box-sizing: border-box;
