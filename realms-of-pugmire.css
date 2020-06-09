@@ -191,7 +191,7 @@ input {
 }
 
 .sheet-input-large {
-  width: 70%;
+  width: 70% !important;
 }
 
 .sheet-input-xlarge {
@@ -235,7 +235,7 @@ input {
   grid-area: info;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   float: right;
 }
 
