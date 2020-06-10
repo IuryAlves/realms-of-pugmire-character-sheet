@@ -37,6 +37,8 @@ body {
 /* TODO: merge with sheet-attr */
 .sheet-center {
     text-align: center !important;
+    justify-self: center;
+    align-self: center;
 }
 
 .sheet-center-grid {
@@ -300,7 +302,7 @@ input {
 
 .sheet-grid-3x6 {
   display: grid;
-  grid-template-columns: 20px 100px 150px;
+  grid-template-columns: 50px 50px 100px;
   grid-template-rows: repeat(6, 1fr);
 }
 
