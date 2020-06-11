@@ -311,6 +311,8 @@ input {
   display: grid;
   grid-template-columns: 50px 50px 100px;
   grid-template-rows: repeat(6, 1fr);
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .sheet-grid-2x3 {
