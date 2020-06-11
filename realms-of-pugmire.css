@@ -36,6 +36,7 @@ body {
 
 /* TODO: merge with sheet-attr */
 .sheet-center {
+    padding-right: 0px;
     text-align: center !important;
     justify-self: center;
     align-self: center;
@@ -223,6 +224,12 @@ input {
 .sheet-tricks > textarea {
   height: 88%;
 }
+
+.sheet-header {
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
 
 .sheet-content {
   margin-left: 5px;
