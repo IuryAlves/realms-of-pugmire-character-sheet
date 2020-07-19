@@ -118,7 +118,7 @@ body {
   margin-left: 5px;
 }
 
-.sheet-weapons-table-roll {
+.sheet-weapons-table-roll, .sheet-weapons-dice {
   width: 10%;
 }
 
@@ -407,4 +407,9 @@ input {
   left: 9px;
   width: 8px;
   height: 8px;
+}
+
+.sheet-d20-icon {
+  background: transparent;
+  font-family:'dicefontd20';
 }
