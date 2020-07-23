@@ -307,9 +307,9 @@ input {
   grid-template-rows: 1fr;
 }
 
-.sheet-grid-3x6 {
+.sheet-grid-4x6 {
   display: grid;
-  grid-template-columns: 50px 50px 100px;
+  grid-template-columns: 40px 30px 50px 70px;
   grid-template-rows: repeat(6, 1fr);
   margin-bottom: 5px;
   margin-top: 5px;
@@ -409,26 +409,40 @@ input {
   height: 8px;
 }
 
+.sheet-text-small {
+  font-size: 11px;
+}
+
 .sheet-d20-icon {
   background: transparent;
   font-family:'dicefontd20';
 }
 
-.sheet-rolltemplate-attack {
+
+.sheet-rolltemplate-attack, .sheet-rolltemplate-basic {
   background-color: white;
 }
 
-.sheet-rolltemplate-attack p, .sheet-rolltemplate-attack h4 {
+.sheet-rolltemplate-attack p, .sheet-rolltemplate-attack h4, .sheet-rolltemplate-basic p, .sheet-rolltemplate-basic h4{
   padding-left: 5px;
   padding-top: 5px;
 }
 
-.sheet-rolltemplate-attack .sheet-rollbox-container {
+.sheet-rolltemplate-attack .sheet-rollbox-container{
+  width: 100%;
+  border: 1px solid black;
+}
+
+.sheet-rolltemplate-basic .sheet-rollbox-container {
   width: 100%;
   border: 1px solid black;
 }
 
 .sheet-rolltemplate-attack .sheet-rollbox-header {
+  border-bottom: 1px solid black;
+}
+
+.sheet-rolltemplate-basic .sheet-rollbox-header {
   border-bottom: 1px solid black;
 }
 
