@@ -272,6 +272,7 @@ input {
 
 .sheet-skills {
   grid-area: skills;
+  margin-top: -165px;
 }
 
 .sheet-stamina-dice {
@@ -348,6 +349,7 @@ input {
 
 .sheet-descriptions {
   grid-area: descriptions;
+  height: 53%;
 }
 
 .sheet-inline-checkboxes {
