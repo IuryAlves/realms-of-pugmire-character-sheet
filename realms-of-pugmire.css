@@ -115,7 +115,19 @@ body {
 
 .sheet-weapons-table {
   width: 98%;
-  margin-left: 5px;
+  height: 95%;
+  display: inline-block;
+  overflow-y: auto;
+}
+
+.sheet-weapons-table-description {
+  background-color: #FFEFD0;
+  position: sticky;
+  top: 0;
+}
+
+.sheet-weapons-table-description:first-child {
+  border-top-left-radius: 10px;
 }
 
 .sheet-weapons-table-roll, .sheet-weapons-dice {
