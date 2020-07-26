@@ -214,10 +214,6 @@ input {
   width: 90%;
 }
 
-.sheet-sketch {
-  grid-area: sketch;
-}
-
 .sheet-spell {
   height: 330px;
   grid-area: spell;
