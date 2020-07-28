@@ -180,7 +180,7 @@
       <tbody>
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{stre_mod} + @{skill_intimidate} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{intimidate_desc}}}{{result=[[1d20 + @{stre_mod} + @{skill_intimidate} ]]}}"></button>
           </td>
           <td>
             <input type="checkbox" name="attr_skill_intimidate" value="@{prof}"/>
@@ -662,6 +662,20 @@
   </div>
   <div class="sheet-rollbox-content">
     <p class="sheet-content">Result: {{result}}</p>
+  </div>
+</div>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-description">
+<div class="sheet-rollbox-container">
+  <div class="sheet-rollbox-header">
+    <h4 class="sheet-content"> {{character}} </h4>
+  </div>
+  <div class="sheet-rollbox-content">
+    <p class="sheet-content">Result: {{result}}</p>
+  </div>
+  <div class="sheet-rollbox-content">
+    <p class="sheet-content">Description: {{description}}</p>
   </div>
 </div>
 </rolltemplate>
