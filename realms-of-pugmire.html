@@ -181,6 +181,7 @@
         <tr>
           <td>
             <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{intimidate_desc}}}{{result=[[1d20 + @{stre_mod} + @{skill_intimidate} ]]}}"></button>
+            <input type="hidden" name="attr_intimidate_desc" value="<strong>Intimidade</strong>: This skill covers your character's ability to influence someone through threats, physical violence, and other hostile actions.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_intimidate" value="@{prof}"/>
@@ -188,7 +189,8 @@
           <td>Intimidate</td>
           <td>Strength</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{dex_mod} + @{skill_balance} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{balance_desc}}}{{result=[[1d20 + @{dex_mod} + @{skill_balance} ]]}}"></button>
+            <input type="hidden" name="attr_balance_desc" value="<strong>Balance</strong>: This skill helps your character stay upright in precarious situations, such as trying to balance on a tightrope, run across slippery ice, or stay upright on a high tree branch in a nasty storm.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_balance" value="@{prof}"/>
@@ -199,7 +201,8 @@
 
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{dex_mod} + @{skill_sneak} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{sneak_desc}}}{{result=[[1d20 + @{dex_mod} + @{skill_sneak} ]]}}"></button>
+            <input type="hidden" name="attr_sneak_desc" value="<strong>Sneak</strong>: This skill covers your character’s ability to conceal himself from enemies, slip away without being noticed, sneak past guards, or conceal something on him.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_sneak" value="@{prof}"/>
@@ -207,7 +210,8 @@
           <td>Sneak</td>
           <td>Dexterity</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{dex_mod} + @{skill_steal} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{steal_desc}}}{{result=[[1d20 + @{dex_mod} + @{skill_steal} ]]}}"></button>
+            <input type="hidden" name="attr_steal_desc" value="<strong>Steal</strong>: This skill covers your character’s ability to take something from someone else without them noticing, as well as knowledge of bypassing locks, doors, and other barriers.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_steal" value="@{prof}"/>
@@ -218,7 +222,8 @@
 
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{con_mod} + @{skill_traverse} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{traverse_desc}}}{{result=[[1d20 + @{con_mod} + @{skill_traverse} ]]}}"></button>
+            <input type="hidden" name="attr_traverse_desc" value="<strong>Traverse</strong>: This skill covers your character’s ability to use his body to overcome physical obstacles, such as by climbing them, jumping over them, or swimming through them.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_traverse" value="@{prof}"/>
@@ -226,7 +231,8 @@
           <td>Traverse</td>
           <td>Constitution</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_arcana} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{know_arcana_desc}}}{{result=[[1d20 + @{int_mod} + @{skill_know_arcana} ]]}}"></button>
+            <input type="hidden" name="attr_know_arcana_desc" value="<strong>Know Arcana</strong>: This skill represents your character’s ability to recall information and lore about magic, spells, masterwork relics, and the like, as well as read the language of the Old Ones.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_know_arcana" value="@{prof}"/>
@@ -237,7 +243,8 @@
 
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_culture} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{know_culture_desc}}}{{result=[[1d20 + @{int_mod} + @{skill_know_culture} ]]}}"></button>
+            <input type="hidden" name="attr_know_culture_desc" value="<strong>Know Culture</strong>: This skill helps your character understand the nuances of dog society (such as the intricacies of the royal court), or to understand a different culture entirely. While all the uplifted species speak the same core language, Know Culture will allow your dog to understand a particular culture’s lexicon, secret codes, or euphemisms.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_know_culture" value="@{prof}"/>
@@ -245,7 +252,8 @@
           <td>Know Culture</td>
           <td>Intelligence</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_history} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{know_history_desc}}}{{result=[[1d20 + @{int_mod} + @{skill_know_history} ]]}}"></button>
+            <input type="hidden" name="attr_know_history_desc" value="<strong>Know History</strong>: This skill represents your character’s ability to recall information about historical events, legendary people, and some of the more common myths of the lost civilizations of Man.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_know_history" value="@{prof}"/>
@@ -256,7 +264,8 @@
 
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_nature} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{know_nature_desc}}}{{result=[[1d20 + @{int_mod} + @{skill_know_nature} ]]}}"></button>
+            <input type="hidden" name="attr_know_nature_desc" value="<strong>Know Nature</strong>: This skill represents your character’s ability to recall information about terrain, plants, animals, the weather, and natural cycles.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_know_nature" value="@{prof}"/>
@@ -264,7 +273,8 @@
           <td>Know Nature</td>
           <td>Intelligence</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_religion} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{know_religion_desc}}}{{result=[[1d20 + @{int_mod} + @{skill_know_religion} ]]}}"></button>
+            <input type="hidden" name="attr_know_religion_desc" value="<strong>Know Religion</strong>: This skill represents your character’s ability to recall information about the Church of Man, rites and prayers, religious history, and even the religions of other nations.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_know_religion" value="@{prof}"/>
@@ -274,7 +284,8 @@
         </tr>
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_spirituality} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{know_spirituality_desc}}}{{result=[[1d20 + @{int_mod} + @{skill_know_spirituality} ]]}}"></button>
+            <input type="hidden" name="attr_know_spirituality_desc" value="<strong>Know Spirituality</strong>: This skill represents your character’s ability to recall information about the spirituality of the Nine Lives, rites and prayers, the personal spiritual relationship with the Old Ones, and even the beliefs and religions of other species.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_know_spirituality" value="@{prof}"/>
@@ -282,7 +293,8 @@
           <td>Know Spirituality</td>
           <td>Intelligence</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_handle_animal ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{handle_animal_desc}}}{{result=[[1d20 + @{wis_mod} + @{skill_handle_animal} ]]}}"></button>
+            <input type="hidden" name="attr_handle_animal_desc" value="<strong>Handle Animal</strong>: This skill covers your char- acter’s ability to calm down a domesticated animal, assure your mount isn’t spooked by nearby danger, or discern an animal’s intentions.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_handle_animal" value="@{prof}"/>
@@ -293,7 +305,8 @@
 
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_heal} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{heal_desc}}}{{result=[[1d20 + @{wis_mod} + @{skill_heal} ]]}}"></button>
+            <input type="hidden" name="attr_heal_desc" value="<strong>Heal</strong>: This skill covers your character’s ability to stabilize a dying companion or diagnose an illness.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_heal" value="@{prof}"/>
@@ -301,7 +314,8 @@
           <td>Heal</td>
           <td>Wisdom</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_notice} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{notice_desc}}}{{result=[[1d20 + @{wis_mod} + @{skill_notice} ]]}}"></button>
+            <input type="hidden" name="attr_notice_desc" value="<strong>Notice</strong>: This skill covers your character’s awareness of his surroundings, noticing sudden changes in the environment, and his overall keenness of sense. Dogs value sight and smell equally, and sometimes a distinct smell is more useful than what a dog can see.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_notice" value="@{prof}"/>
@@ -312,7 +326,8 @@
 
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_search} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{search_desc}}}{{result=[[1d20 + @{wis_mod} + @{skill_search} ]]}}"></button>
+            <input type="hidden" name="attr_search_desc" value="<strong>Search</strong>: This skill helps your character as he actively looks or smells for clues or hidden items, as well as deduce where they might be found. It’s different from Notice because the character is actively looking instead of reacting to stimuli.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_search" value="@{prof}"/>
@@ -320,7 +335,8 @@
           <td>Search</td>
           <td>Wisdom</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_sense_motive} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{sense_motive_desc}}}{{result=[[1d20 + @{wis_mod} + @{skill_sense_motive} ]]}}"></button>
+            <input type="hidden" name="attr_sense_motive_desc" value="<strong>Sense Motive</strong>: This skill helps your character determine someone’s true intentions. Whether uncovering a lie or predicting her actions, the dog observes his target’s body language, speech patterns, and mannerisms to learn the truth.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_sense_motive" value="@{prof}"/>
@@ -331,15 +347,17 @@
 
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_survive} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{survive_desc}}}{{result=[[1d20 + @{wis_mod} + @{skill_survive} ]]}}"></button>
+            <input type="hidden" name="attr_survive_desc" value="<strong>Survive</strong>: This skill represents your character’s ability to follow tracks, hunt game, identify signs that enemies live nearby, predict the weather, or avoid natural hazards.">
           </td>
           <td>
-            <input type="checkbox" name="attr_skill_survice" value="@{prof}"/>
+            <input type="checkbox" name="attr_skill_survive" value="@{prof}"/>
           </td>
           <td>Survive</td>
           <td>Wisdom</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{cha_mod} + @{skill_bluff} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{bluff_desc}}}{{result=[[1d20 + @{cha_mod} + @{skill_bluff} ]]}}"></button>
+            <input type="hidden" name="attr_bluff_desc" value="<strong>Bluff</strong>: This skill helps your character to convincingly hide the truth. Wether verbally or through his actions, he can mislead others by ambiguity or outright lies.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_bluff" value="@{prof}"/>
@@ -350,7 +368,8 @@
 
         <tr>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{cha_mod} + @{skill_perform} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{perform_desc}}}{{result=[[1d20 + @{cha_mod} + @{skill_perform} ]]}}"></button>
+            <input type="hidden" name="attr_perform_desc" value="<strong>Perform</strong>: This skill covers how well your character can please and delight an audience, whether it's by storytelling, acting, dancing, music, or some other form of entertainment.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_perform" value="@{prof}"/>
@@ -358,7 +377,8 @@
           <td>Perform</td>
           <td>Charisma</td>
           <td>
-            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{cha_mod} + @{skill_persuade} ]]}}"></button>
+            <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{persuade_desc}}}{{result=[[1d20 + @{cha_mod} + @{skill_persuade} ]]}}"></button>
+            <input type="hidden" name="attr_persuade_desc" value="<strong>Persuade</strong>: This skill represents your character’s ability to influence someone through tact, socia grace, diplomacy, or a generally positive nature.">
           </td>
           <td>
             <input type="checkbox" name="attr_skill_persuade" value="@{prof}"/>
@@ -675,7 +695,7 @@
     <p class="sheet-content">Result: {{result}}</p>
   </div>
   <div class="sheet-rollbox-content">
-    <p class="sheet-content">Description: {{description}}</p>
+    <p class="sheet-content">{{description}}</p>
   </div>
 </div>
 </rolltemplate>
