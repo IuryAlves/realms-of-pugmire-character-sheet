@@ -1,8 +1,10 @@
+/* TODO: Rename to sheet-main */
 .sheet-sheet {
-  /* Colors */
+    /* Colors */
   --sheet-bg-white: white;
   --sheet-bg-brown: #A1887F;
   --sheet-bg-light-brown: #D7CCC8;
+  --sheet-color-beige: #f7f3e7;
   display: grid;
   grid-gap: 10px;
   grid-template-areas:
@@ -466,47 +468,51 @@ input {
 }
 
 
-.sheet-rolltemplate-attack, .sheet-rolltemplate-basic, .sheet-rolltemplate-description{
-  background-color: white;
+.sheet-rolltemplate-attack,
+.sheet-rolltemplate-basic,
+.sheet-rolltemplate-description {
+  background-color: #FFF;
 }
 
-.sheet-rolltemplate-attack p, .sheet-rolltemplate-attack h4, .sheet-rolltemplate-basic p, .sheet-rolltemplate-basic h4, .sheet-rolltemplate-description p, .sheet-rolltemplate-description h4{
+.sheet-rolltemplate-attack p,
+.sheet-rolltemplate-attack h4,
+.sheet-rolltemplate-basic p,
+.sheet-rolltemplate-basic h4,
+.sheet-rolltemplate-description p,
+.sheet-rolltemplate-description h4 {
   padding-left: 5px;
   padding-top: 5px;
 }
 
-
+.sheet-rolltemplate-description .sheet-rollbox-container,
+.sheet-rolltemplate-basic .sheet-rollbox-container,
 .sheet-rolltemplate-attack .sheet-rollbox-container {
   width: 100%;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
-.sheet-rolltemplate-basic .sheet-rollbox-container {
-  width: 100%;
-  border: 1px solid black;
-}
-
-.sheet-rolltemplate-description .sheet-rollbox-container{
-  width: 100%;
-  border: 1px solid black;
-}
-
+.sheet-rolltemplate-basic .sheet-rollbox-header,
+.sheet-rolltemplate-description .sheet-rollbox-header,
 .sheet-rolltemplate-attack .sheet-rollbox-header {
   border-bottom: 1px solid black;
 }
 
-.sheet-rolltemplate-basic .sheet-rollbox-header {
-  border-bottom: 1px solid black;
+.sheet-rolltemplate-basic .sheet-rollbox-header h4,
+.sheet-rolltemplate-attack .sheet-rollbox-header h4,
+.sheet-rolltemplate-description .sheet-rollbox-header h4 {
+  color: white;
+  background-color: #A1887F;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.sheet-rolltemplate-description .sheet-rollbox-header {
-  border-bottom: 1px solid black;
-}
-
-.sheet-stripped tr:nth-child(even), .sheet-rolltemplate-attack .sheet-stripped p:nth-child(even) {
+.sheet-stripped tr:nth-child(even),
+.sheet-rolltemplate-attack .sheet-stripped p:nth-child(even) {
   background-color: var(--sheet-bg-light-brown);
 }
 
-.sheet-stripped tr:nth-child(odd), .sheet-rolltemplate-attack .sheet-stripped p:nth-child(odd) {
+.sheet-stripped tr:nth-child(odd),
+.sheet-rolltemplate-attack .sheet-stripped p:nth-child(odd) {
   background-color: var(--sheet-bg-white);
 }
