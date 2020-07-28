@@ -1,4 +1,8 @@
 .sheet-sheet {
+  /* Colors */
+  --sheet-bg-white: white;
+  --sheet-bg-brown: #A1887F;
+  --sheet-bg-light-brown: #D7CCC8;
   display: grid;
   grid-gap: 10px;
   grid-template-areas:
@@ -18,9 +22,6 @@
   grid-template-columns: 1fr repeat(5, minmax(100px, 1fr)) 4fr;
 }
 
-body {
-  margin-bottom: 10px;
-}
 
 .sheet-input-proficiency {
     margin-left: -4px;
@@ -113,6 +114,21 @@ body {
   grid-area: logo;
 }
 
+.sheet-skills-table {
+  width: 100%;
+  display: inline-block;
+  overflow-y: auto;
+}
+
+.sheet-skills-table td {
+  padding: 1px;
+}
+
+.sheet-skills-table-head th{
+  background-color: var(--sheet-bg-brown);
+  color: var(--sheet-bg-white);
+}
+
 .sheet-weapons-table {
   width: 98%;
   height: 95%;
@@ -121,7 +137,8 @@ body {
 }
 
 .sheet-weapons-table-description {
-  background-color: #FFEFD0;
+  color: var(--sheet-bg-white);
+  background-color: var(--sheet-bg-brown);
   position: sticky;
   top: 0;
 }
@@ -424,7 +441,7 @@ input {
 }
 
 .sheet-d20-icon {
-  background: transparent;
+  background: var(--sheet-bg-white);
   font-family:'dicefontd20';
 }
 
@@ -456,10 +473,10 @@ input {
   border-bottom: 1px solid black;
 }
 
-.sheet-rolltemplate-attack .sheet-rollbox-content p:nth-child(even) {
-  background-color: #DCDCDC;
+.sheet-stripped tr:nth-child(even), .sheet-rolltemplate-attack .sheet-stripped p:nth-child(even) {
+  background-color: var(--sheet-bg-light-brown);
 }
 
-.sheet-rolltemplate-attack .sheet-rollbox-content p:nth-child(odd) {
-  background-color: white;
+.sheet-stripped tr:nth-child(odd), .sheet-rolltemplate-attack .sheet-stripped p:nth-child(odd) {
+  background-color: var(--sheet-bg-white);
 }

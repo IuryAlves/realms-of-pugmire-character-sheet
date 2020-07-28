@@ -166,8 +166,208 @@
     </div>
   </div>
   <div class="sheet-skills sheet-rounded-border">
-    <h3 class="sheet-content sheet-center">Skills</h3>
-    <textarea class="sheet-textarea sheet-textarea-skills" name="attr_skills"></textarea>
+    <table class="sheet-skills-table sheet-stripped">
+      <thead class="sheet-skills-table-head">
+        <th></th>
+        <th></th>
+        <th>Skill</th>
+        <th>Attribute Modifier</th>
+        <th></th>
+        <th></th>
+        <th>Skill</th>
+        <th>Attribute Modifier</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{stre_mod} + @{skill_intimidate} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_intimidate" value="@{prof}"/>
+          </td>
+          <td>Intimidate</td>
+          <td>Strength</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{dex_mod} + @{skill_balance} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_balance" value="@{prof}"/>
+          </td>
+          <td>Balance</td>
+          <td>Dexterity</td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{dex_mod} + @{skill_sneak} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_sneak" value="@{prof}"/>
+          </td>
+          <td>Sneak</td>
+          <td>Dexterity</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{dex_mod} + @{skill_steal} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_steal" value="@{prof}"/>
+          </td>
+          <td>Steal</td>
+          <td>Dexterity</td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{con_mod} + @{skill_traverse} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_traverse" value="@{prof}"/>
+          </td>
+          <td>Traverse</td>
+          <td>Constitution</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_arcana} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_know_arcana" value="@{prof}"/>
+          </td>
+          <td>Know Arcana</td>
+          <td>Intelligence</td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_culture} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_know_culture" value="@{prof}"/>
+          </td>
+          <td>Know Culture</td>
+          <td>Intelligence</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_history} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_know_history" value="@{prof}"/>
+          </td>
+          <td>Know History</td>
+          <td>Intelligence</td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_nature} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_know_nature" value="@{prof}"/>
+          </td>
+          <td>Know Nature</td>
+          <td>Intelligence</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_religion} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_know_religion" value="@{prof}"/>
+          </td>
+          <td>Know Religion</td>
+          <td>Intelligence</td>
+        </tr>
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{int_mod} + @{skill_know_spirituality} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_know_spirituality" value="@{prof}"/>
+          </td>
+          <td>Know Spirituality</td>
+          <td>Intelligence</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_handle_animal ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_handle_animal" value="@{prof}"/>
+          </td>
+          <td>Handle Animal</td>
+          <td>Wisdom</td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_heal} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_heal" value="@{prof}"/>
+          </td>
+          <td>Heal</td>
+          <td>Wisdom</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_notice} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_notice" value="@{prof}"/>
+          </td>
+          <td>Notice</td>
+          <td>Wisdom</td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_search} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_search" value="@{prof}"/>
+          </td>
+          <td>Search</td>
+          <td>Wisdom</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_sense_motive} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_sense_motive" value="@{prof}"/>
+          </td>
+          <td>Sense Motive</td>
+          <td>Wisdom</td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{wis_mod} + @{skill_survive} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_survice" value="@{prof}"/>
+          </td>
+          <td>Survive</td>
+          <td>Wisdom</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{cha_mod} + @{skill_bluff} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_bluff" value="@{prof}"/>
+          </td>
+          <td>Bluff</td>
+          <td>Charisma</td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{cha_mod} + @{skill_perform} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_perform" value="@{prof}"/>
+          </td>
+          <td>Perform</td>
+          <td>Charisma</td>
+          <td>
+            <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{cha_mod} + @{skill_persuade} ]]}}"></button>
+          </td>
+          <td>
+            <input type="checkbox" name="attr_skill_persuade" value="@{prof}"/>
+          </td>
+          <td>Persuade</td>
+          <td>Charisma</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div class="sheet-stamina-points sheet-rounded-border sheet-center">
     <label class="sheet-center sheet-header">Stamina Points</label>
@@ -471,7 +671,7 @@
   <div class="sheet-rollbox-header">
     <h4 class="sheet-content"> {{character}} </h4>
   </div>
-  <div class="sheet-rollbox-content">
+  <div class="sheet-rollbox-content sheet-stripped">
 
     <p class="sheet-content">Weapon: {{attackname}}</p>
     <p class="sheet-content"> Type/Quality: {{attack_type}}
