@@ -70,7 +70,8 @@
 }
 
 .sheet-shield-title > label {
-  margin-left: 0px
+  margin-left: 0px;
+  color: var(--sheet-bg-white);
 }
 
 .sheet-input-disabled-transparent:disabled {
@@ -124,10 +125,19 @@
   padding: 1px;
 }
 
-.sheet-skills-table-head th{
+.sheet-skills-table-head th {
   background-color: var(--sheet-bg-brown);
   color: var(--sheet-bg-white);
 }
+
+.sheet-skills-table-head th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.sheet-skills-table-head th:last-child {
+  border-top-right-radius: 10px;
+}
+
 
 .sheet-weapons-table {
   width: 98%;
@@ -251,10 +261,20 @@ input {
 }
 
 .sheet-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   border-bottom: 1px solid;
   padding-bottom: 5px;
 }
 
+.sheet-header, .sheet-shield-title {
+  background-color: var(--sheet-bg-brown);
+  color: var(--sheet-bg-white);
+}
+
+.sheet-header h3 {
+  color: var(--sheet-bg-white);
+}
 
 .sheet-content {
   margin-left: 5px;
