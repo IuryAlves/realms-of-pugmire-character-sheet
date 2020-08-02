@@ -20,7 +20,7 @@
     "tricks tricks tricks tricks spell-slots spell-slots spell-slots spell-slots "
     "tricks tricks tricks tricks spell spell spell spell ";
 
-  grid-template-columns: 1fr repeat(5, minmax(100px, 1fr)) 4fr;
+  grid-template-columns: 2em repeat(3, minmax(100px, 1fr)) 4fr;
 }
 
 .sheet-box {
