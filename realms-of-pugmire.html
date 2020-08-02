@@ -40,7 +40,7 @@
           </label>  
         </div>
         <div class="sheet-center">
-          <input type="number" class="sheet-input-no-border sheet-input-disabled-transparent" disabled="true" name="attr_stre_mod" value="floor((@{str}-10)/2)" />
+          <input type="number" class="sheet-text-right sheet-input-no-border sheet-input-transparent" disabled="true" name="attr_stre_mod" value="floor((@{str}-10)/2)" />
         </div>
         <div class="sheet-shield-mod">
           <input type="number" class="sheet-shield-mod-input" name="attr_str" value="10"/>
@@ -53,7 +53,7 @@
           </label>
         </div>
         <div class="sheet-center">
-          <input type="number" class="sheet-input-no-border sheet-input-disabled-transparent" disabled="true" name="attr_dex_mod" value="floor((@{dex}-10)/2)" />
+          <input type="number" class="sheet-text-right sheet-input-no-border sheet-input-transparent" disabled="true" name="attr_dex_mod" value="floor((@{dex}-10)/2)" />
         </div>
         <div class="sheet-shield-mod">
           <input type="number" class="sheet-shield-mod-input" name="attr_dex"/>
@@ -66,7 +66,7 @@
           </label>
         </div>
         <div class="sheet-center">
-          <input type="number" class="sheet-input-no-border sheet-input-disabled-transparent" disabled="true" name="attr_con_mod" value="floor((@{con}-10)/2)"/>
+          <input type="number" class="sheet-text-right sheet-input-no-border sheet-input-transparent" disabled="true" name="attr_con_mod" value="floor((@{con}-10)/2)"/>
         </div>
         <div class="sheet-shield-mod">
           <input type="number" class="sheet-shield-mod-input " name="attr_con" value="10"/>
@@ -79,7 +79,7 @@
           </label>
         </div>
         <div class="sheet-center">
-          <input type="number" class="sheet-input-no-border sheet-input-disabled-transparent" disabled="true" name="attr_int_mod" value="floor((@{int}-10)/2)"/>
+          <input type="number" class="sheet-text-right sheet-input-no-border sheet-input-transparent" disabled="true" name="attr_int_mod" value="floor((@{int}-10)/2)"/>
         </div>
         <div class="sheet-shield-mod">
           <input type="number" class="sheet-shield-mod-input" name="attr_int" value="10"/>
@@ -92,7 +92,7 @@
           </label>
         </div>
         <div class="sheet-center">
-          <input type="number" class="sheet-input-no-border sheet-input-disabled-transparent" disabled="true" name="attr_wis_mod" value="floor((@{wis}-10)/2)"/>
+          <input type="number" class="sheet-text-right sheet-input-no-border sheet-input-transparent" disabled="true" name="attr_wis_mod" value="floor((@{wis}-10)/2)"/>
         </div>
         <div class="sheet-shield-mod">
           <input type="number" class="sheet-shield-mod-input" name="attr_wis" value="10"/>
@@ -105,7 +105,7 @@
           </label>
         </div>
         <div class="sheet-center">
-          <input type="number" class="sheet-input-no-border sheet-input-disabled-transparent" disabled="true" name="attr_cha_mod" value="floor((@{cha}-10)/2)"/>
+          <input type="number" class="sheet-text-right sheet-input-no-border sheet-input-transparent" disabled="true" name="attr_cha_mod" value="floor((@{cha}-10)/2)"/>
         </div>
         <div class="sheet-shield-mod">
           <input type="number" class="sheet-shield-mod-input" name="attr_cha" value="10"/>
@@ -124,44 +124,53 @@
     <div class="sheet-grid-4x6">
       <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{sav_thr_str_val}]]}}"></button>
       <input type="checkbox" class="sheet-center" name="attr_sav_thr_str" value="@{prof}" />
-      <input class="sheet-input-medium sheet-center sheet-input-disabled-transparent" type="number" disabled="true" name="attr_sav_thr_str_val" value="@{stre_mod}+@{sav_thr_str}" />
+      <input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_str_val" value="@{stre_mod}+@{sav_thr_str}" />
       <label class="sheet-center sheet-text-small">Strength</label>
       <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{sav_thr_dex_val}]]}}"></button>
       <input type="checkbox" class="sheet-center" name="attr_sav_thr_dex" value="@{prof}" />
-      <input class="sheet-input-medium sheet-center sheet-input-disabled-transparent" type="number" disabled="true" name="attr_sav_thr_dex_val" value="@{dex_mod}+@{sav_thr_dex}" />
+      <input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_dex_val" value="@{dex_mod}+@{sav_thr_dex}" />
       <label class="sheet-center sheet-text-small">Dexterity</label>
       <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{sav_thr_con_val}]]}}"></button>
       <input type="checkbox" class="sheet-center" name="attr_sav_thr_con" value="@{prof}" />
-      <input class="sheet-input-medium sheet-center sheet-input-disabled-transparent" type="number" disabled="true" name="attr_sav_thr_con_val" value="@{con_mod}+@{sav_thr_con}" />
+      <input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_con_val" value="@{con_mod}+@{sav_thr_con}" />
       <label class="sheet-center sheet-text-small">Constitution</label>
       <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{sav_thr_int_val}]]}}"></button>
       <input type="checkbox" class="sheet-center" name="attr_sav_thr_int" value="@{prof}" />
-      <input class="sheet-input-medium sheet-center sheet-input-disabled-transparent" type="number" disabled="true" name="attr_sav_thr_int_val" value="@{int_mod}+@{sav_thr_int}" />
+      <input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_int_val" value="@{int_mod}+@{sav_thr_int}" />
       <label class="sheet-center sheet-text-small">Intelligence</label>
       <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{sav_thr_wis_val}]]}}"></button>
       <input type="checkbox" class="sheet-center" name="attr_sav_thr_wis" value="@{prof}" />
-      <input class="sheet-input-medium sheet-center sheet-input-disabled-transparent" type="number" disabled="true" name="attr_sav_thr_wis_val" value="@{wis_mod}+@{sav_thr_wis}" />
+      <input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_wis_val" value="@{wis_mod}+@{sav_thr_wis}" />
       <label class="sheet-center sheet-text-small">Wisdom</label>
       <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{sav_thr_cha_val}]]}}"></button>
       <input type="checkbox" class="sheet-center" name="attr_sav_thr_cha" value="@{prof}" />
-      <input class="sheet-input-medium sheet-center sheet-input-disabled-transparent" type="number" disabled="true" name="attr_sav_thr_cha_val" value="@{cha_mod}+@{sav_thr_cha}" />
+      <input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_cha_val" value="@{cha_mod}+@{sav_thr_cha}" />
       <label class="sheet-center sheet-text-small">Charisma</label>
     </div>
   </div>
-  <div class="sheet-defense sheet-rounded-border">
-    <div class='sheet-grid-2x3'>
-      <label class="sheet-content sheet-center">Defense</label>
-      <div class="sheet-center">
-        <input class="sheet-input-small sheet-input-top" type="text" name="attr_defense" />
+  <div class="sheet-defense">
+    <div class='sheet-grid-3x2'>
+      <div class="sheet-center sheet-box">
+        <div class="sheet-shield-heraldic">
+          <input class="sheet-input-medium sheet-text-huge sheet-input-no-border sheet-input-transparent" type="text" name="attr_defense" />
+        </div>
       </div>
+
+      <div class="sheet-rounded-border sheet-box sheet-center">
+        <input class="sheet-input-medium sheet-text-huge sheet-input-no-border sheet-input-transparent" type="text" name="attr_init" />
+      </div>
+
+      <div class="sheet-rounded-border sheet-box sheet-center">
+        <input class="sheet-speed-value sheet-input-medium sheet-text-medium sheet-input-no-border sheet-input-transparent" type
+        ="text" name="attr_speed_2_paws" />
+        <div class="line"></div>
+        <input class="sheet-speed-value sheet-input-medium sheet-text-medium sheet-input-no-border sheet-input-transparent" type
+        ="text" name="attr_speed_4_paws" />
+      </div>
+      <label class="sheet-content sheet-center">Defense </label>
       <label class="sheet-content sheet-center">Initiative </label>
-      <div class="sheet-center">
-        <input class="sheet-input-small" type="text" name="attr_init" />
-      </div>
       <label class="sheet-content sheet-center">Speed </label>
-      <div class="sheet-center">
-        <input class="sheet-input-small" type="text" name="attr_speed" />
-      </div>
+
     </div>
   </div>
   <div class="sheet-skills sheet-rounded-border">
@@ -474,7 +483,7 @@
         ge" type="number" name="attr_ss"/>
       </div>
       <div class="sheet-center">
-        <input class="sheet-input-disabled-transparent" type="number" name="attr_ss_max" value="@{level}*2" disabled="true" />
+        <input class="sheet-input-transparent" type="number" name="attr_ss_max" value="@{level}*2" disabled="true" />
       </div>
     </div>
   </div>
