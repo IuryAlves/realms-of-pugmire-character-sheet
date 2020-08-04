@@ -36,6 +36,17 @@
   left: 7px;
 }
 
+.sheet-initiative-label {
+  position: relative;
+  left: 5px;
+}
+
+.sheet-initiative-dice {
+  position: relative;
+  top: 7px;
+  height: 20px;
+}
+
 .sheet-speed-value {
   top: 5px;
   position: relative;
@@ -420,8 +431,8 @@ input {
 
 .sheet-grid-3x2 {
   display: grid;
-  grid-gap: 6px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-columns: 5em 6em 4em;
   grid-template-rows: 5em 3em;
 }
 

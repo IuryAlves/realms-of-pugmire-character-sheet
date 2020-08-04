@@ -167,9 +167,12 @@
         <input class="sheet-speed-value sheet-input-medium sheet-text-medium sheet-input-no-border sheet-input-transparent" type
         ="text" name="attr_speed_4_paws" />
       </div>
-      <label class="sheet-content sheet-center">Defense </label>
-      <label class="sheet-content sheet-center">Initiative </label>
-      <label class="sheet-content sheet-center">Speed </label>
+      <label class="sheet-content sheet-center sheet-text-small">Defense </label>
+      <div class="sheet-inline-items sheet-initiative">
+        <button type="roll" class="sheet-d20-icon sheet-initiative-dice" value="&{template:basic} {{character=@{character_name}}}{{result=[[1d20+@{init}&{tracker}]]}}"></button>
+        <label class="sheet-content sheet-center sheet-text-small">Initiative </label>
+      </div>
+      <label class="sheet-content sheet-center sheet-text-small">Speed </label>
 
     </div>
   </div>
