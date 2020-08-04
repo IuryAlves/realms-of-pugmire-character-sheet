@@ -330,6 +330,10 @@ input {
   width: 90%;
 }
 
+.sheet-input-huge {
+  width: 95%;
+}
+
 .sheet-spell {
   height: 330px;
   grid-area: spell;
@@ -361,7 +365,8 @@ input {
   color: var(--sheet-bg-white);
 }
 
-.sheet-header h3 {
+.sheet-header h3,
+.sheet-header label {
   color: var(--sheet-bg-white);
 }
 
@@ -399,11 +404,8 @@ input {
 
 .sheet-stamina-dice {
   grid-area: dice;
-}
+  width: 100%;
 
-.sheet-stamina-dice > label {
-  float: left;
-  width: 50%;
 }
 
 .sheet-stamina-points {
