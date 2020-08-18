@@ -1,0 +1,41 @@
+<rolltemplate class="sheet-rolltemplate-basic">
+<div class="sheet-rollbox-container">
+  <div class="sheet-rollbox-header">
+    <h4 class="sheet-content"> {{character}} </h4>
+  </div>
+  <div class="sheet-rollbox-content">
+    <p class="sheet-content">Result: {{result}}</p>
+  </div>
+</div>
+</rolltemplate>
+<rolltemplate class="sheet-rolltemplate-description">
+<div class="sheet-rollbox-container">
+  <div class="sheet-rollbox-header">
+    <h4 class="sheet-content"> {{character}} </h4>
+  </div>
+  <div class="sheet-rollbox-content">
+    <p class="sheet-content">Result: {{result}}</p>
+  </div>
+  <div class="sheet-rollbox-content">
+    <p class="sheet-content">{{description}}</p>
+  </div>
+</div>
+</rolltemplate>
+<rolltemplate class="sheet-rolltemplate-attack">
+<div class="sheet-rollbox-container">
+  <div class="sheet-rollbox-header">
+    <h4 class="sheet-content"> {{character}} </h4>
+  </div>
+  <div class="sheet-rollbox-content sheet-stripped">
+    <p class="sheet-content">Weapon: {{attackname}}</p>
+    <p class="sheet-content"> Type/Quality: {{attack_type}}
+      <p class="sheet-content">Result: {{attackroll}}</p>
+      {{#^rollWasCrit() attackroll}}
+      <p class="sheet-content">Damage: {{damage}}</p>
+      {{/^rollWasCrit() attackroll}}
+      {{#rollWasCrit() attackroll}}
+      <p class="sheet-content">Critical Damage: {{criticaldamage}}</p>
+      {{/rollWasCrit() attackroll}}
+    </div>
+  </div>
+</rolltemplate>

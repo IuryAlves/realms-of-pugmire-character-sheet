@@ -5,3 +5,15 @@
 
 
 
+## Developing
+
+```sh
+npm install
+```
+
+## Building
+
+```sh
+npm run build
+```
+
