@@ -1,0 +1,14 @@
+{{=<% %>=}}
+<div class="sheet-shield">
+  <div class="sheet-shield-title">
+    <label class="sheet-center">
+      <% attribute_name %>
+    </label>
+  </div>
+  <div class="sheet-center">
+    <input type="number" class="sheet-text-right sheet-input-no-border sheet-input-transparent" disabled="true" name="<% mod_field_name %>" value="floor((@{<% attribute_name %>}-10)/2)" />
+  </div>
+  <div class="sheet-shield-mod">
+    <input type="number" class="sheet-shield-mod-input" name="attr_<%attribute_name%>" value="10"/>
+  </div>
+</div>
