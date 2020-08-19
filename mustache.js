@@ -9,7 +9,34 @@ var path = require('path');
 var args = process.argv;
 var baseTemplate = args[2];
 var output = args[3];
-var view = {};
+var view = {
+  attributes_list: [
+  {
+    attribute_name: "str",
+    mod_field_name: "attr_stre_mod"
+  },
+  {
+    attribute_name: "dex",
+    mod_field_name: "attr_dex_mod"
+  },
+  {
+    attribute_name: "con",
+    mod_field_name: "attr_cont_mod"
+  },
+  {
+    attribute_name: "int",
+    mod_field_name: "attr_int_mod"
+  },
+  {
+    attribute_name: "wis",
+    mod_field_name: "attr_wis_mod"
+  },
+  {
+    attribute_name: "cha",
+    mod_field_name: "attr_cha_mod"
+  }
+]
+};
 var partials = {};
 var customTags = ['<%', '%>'];
 var templateDir = __dirname + '/templates/';
