@@ -3,6 +3,7 @@
     "mustache": "^4.0.1"
   },
   "scripts": {
-    "build": "./mustache.js realms-of-pugmire.mustache dist/realms-of-pugmire.html"
+    "build": "./mustache.js --production realms-of-pugmire.mustache dist/realms-of-pugmire.html",
+    "dev": "./mustache.js --development"
   }
 }
