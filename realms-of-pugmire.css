@@ -168,9 +168,13 @@
 .sheet-input-line {
   border-right: none;
   border-left: none;
-  border-top: none
+  border-top: none;
+  flex: 1;
 }
 
+.sheet-width-95 {
+  width: 95px;
+}
 /* TODO: Rename to only "no-border"; */
 .sheet-input-no-border {
   border: none;
