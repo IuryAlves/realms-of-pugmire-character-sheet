@@ -1,0 +1,16 @@
+.sheet-center {
+  padding-right: 0px;
+  text-align: center !important;
+  justify-self: center;
+  align-self: center;
+}
+
+.sheet-text-right {
+  text-align: right;
+}
+
+.sheet-content {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

@@ -7,7 +7,7 @@
   --sheet-color-beige: #f7f3e7;
   display: grid;
   grid-gap: 5px;
-  grid-template-rows: auto 45px auto auto auto auto 65px;
+  grid-template-rows: auto 45px 250px 100px 120 145px 65px;
 }
 
 .sheet-descriptions {
