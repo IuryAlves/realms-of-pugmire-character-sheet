@@ -1,0 +1,528 @@
+<%> layout-css %>
+
+/* Unfortunately it is not possible to iterate over list of partials, so they have to be included manually :( */
+
+<%> proficiency-css %>
+
+.sheet-center-grid {
+  justify-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.sheet-box {
+  width: 65px;
+  height: 65px;
+}
+
+.sheet-line {
+  width: 80%;
+  border-bottom: 1px solid black;
+  position: relative;
+  top: 8%;
+  left: 7px;
+}
+
+.sheet-initiative-label {
+  position: relative;
+  left: 5px;
+}
+
+.sheet-initiative-dice {
+  position: relative;
+  top: 7px;
+  height: 20px;
+}
+
+.sheet-speed-value {
+  top: 5px;
+  position: relative;
+  padding: 0;
+}
+
+.sheet-shield-heraldic {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: transparent;
+  border-radius: 0 0 70% 70%;
+  display: inline-block;
+}
+
+.sheet-shield-heraldic:before {
+  border-left: 1px solid black;
+}
+
+.sheet-shield-heraldic:before, .sheet-shield-heraldic:after {
+  position: absolute;
+  margin-top: 50%;
+  content:"";
+  left: 50%;
+  top: 0;
+  width: 50%;
+  height: 53%;
+  background: transparent;
+  border-radius: 10% 10% 0 0 / 40% 40% 0 0;
+  -webkit-transform: rotate(-61.5deg);
+  -moz-transform: rotate(-61.5deg);
+  -ms-transform: rotate(-61.5deg);
+  -o-transform: rotate(-61.5deg);
+  transform: rotate(-61.5deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.sheet-shield-heraldic:after {
+  border-right: 1px solid black;
+  background-color: transparent;
+  left: 0;
+  -webkit-transform: rotate(61.5deg);
+  -moz-transform: rotate(61.5deg);
+  -ms-transform: rotate(61.5deg);
+  -o-transform: rotate(61.5deg);
+  transform: rotate(61.5deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin :100% 100%;
+}
+
+.sheet-input-proficiency {
+  margin-left: -4px;
+  margin-top: -8px;
+  float: left;
+  text-align: right;
+  height: 140% !important;
+  margin-bottom: 0px;
+  border-radius: 50px;
+  border-right: 1px solid black;
+  width: 100%;
+}
+
+/* TODO: merge with sheet-attr */
+.sheet-center {
+  padding-right: 0px;
+  text-align: center !important;
+  justify-self: center;
+  align-self: center;
+}
+
+.sheet-text-right {
+  text-align: right;
+}
+
+
+.sheet-shield {
+  border: 1px solid black;
+  width: 70px;
+  height: 75px;
+  display: block;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sheet-inline-items {
+  display: inline-flex;
+}
+
+.sheet-shield-title {
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: inherit;
+}
+
+.sheet-shield-title > label {
+  margin-left: 0px;
+  color: var(--sheet-bg-white);
+}
+
+.sheet-input-transparent {
+  background-color: transparent;
+}
+
+.sheet-input-line {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  flex: 1;
+}
+
+.sheet-width-95 {
+  width: 95px;
+}
+/* TODO: Rename to only "no-border"; */
+.sheet-input-no-border {
+  border: none;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.sheet-shield-mod {
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  bottom: -10px; /* metade da altura */
+  left: 0;
+  height: 20px;
+  width: 100%;
+}
+
+.sheet-shield-mod-input {
+  text-align: right;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 9px;
+  margin-top: -7px;
+}
+
+
+.sheet-skills-table {
+  width: 100%;
+  display: inline-block;
+  overflow-y: auto;
+}
+
+.sheet-skills-table td {
+  padding: 1px;
+}
+
+.sheet-skills-table-head th {
+  background-color: var(--sheet-bg-brown);
+  color: var(--sheet-bg-white);
+}
+
+.sheet-skills-table-head th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.sheet-skills-table-head th:last-child {
+  border-top-right-radius: 10px;
+}
+
+
+.sheet-weapons-table {
+  width: 98%;
+  height: 95%;
+  display: inline-block;
+  overflow-y: auto;
+}
+
+.sheet-weapons-table-description {
+  color: var(--sheet-bg-white);
+  background-color: var(--sheet-bg-brown);
+  position: sticky;
+  top: 0;
+}
+
+.sheet-weapons-table-description:first-child {
+  border-top-left-radius: 10px;
+}
+
+.sheet-weapons-table-roll, .sheet-weapons-dice {
+  width: 10%;
+}
+
+.sheet-weapons-table-dmg {
+  width: 12%;
+}
+
+.sheet-rounded-border {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.sheet-textarea {
+  padding-left: 13px;
+  width: 100%;
+  height: 88%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-attachment: local;
+  background-image:
+  linear-gradient(to right, white 10px, transparent 10px),
+  linear-gradient(to left, white 10px, transparent 10px),
+  repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
+  line-height: 31px;
+}
+
+.sheet-textarea-traits {
+  height: 75%;
+}
+
+.sheet-textarea-skills {
+  height: 79%;
+}
+
+.sheet-textarea-rucksack {
+  height: 84%;
+}
+
+input {
+  border: 1px solid black;
+  margin: 0.1em;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  text-align: center
+}
+
+.sheet-input {
+  max-width: 100%;
+  float: right;
+  clear: both;
+}
+
+.sheet-right {
+  float: right;
+}
+
+.sheet-input-small {
+  width: 30% !important;
+  margin-top: 0px;
+  padding-bottom: 1px;
+}
+
+.sheet-input-medium {
+  width: 50%;
+}
+
+.sheet-input-top {
+  margin-top: 5px;
+}
+
+.sheet-input-large {
+  width: 70% !important;
+}
+
+.sheet-input-xlarge {
+  width: 90%;
+}
+
+.sheet-input-huge {
+  width: 95%;
+}
+
+.sheet-tricks > textarea {
+  height: 88%;
+}
+
+.sheet-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+.sheet-header, .sheet-shield-title {
+  background-color: var(--sheet-bg-brown);
+  color: var(--sheet-bg-white);
+}
+
+.sheet-header h3,
+.sheet-header label {
+  color: var(--sheet-bg-white);
+}
+
+.sheet-content {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.sheet-attributes > input {
+  height: 80%;
+}
+
+.sheet-grid-3x2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 5em 6em 4em;
+  grid-template-rows: 5em 3em;
+}
+
+.sheet-grid-1x3 {
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 10em);
+}
+
+.sheet-grid-4x6 {
+  display: grid;
+  grid-template-columns: 40px 30px 50px 70px;
+  grid-template-rows: repeat(6, 1fr);
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.sheet-grid-2x3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.sheet-grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
+}
+
+.sheet-grid-1x6 {
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.sheet-inline-checkboxes {
+  display: inline-flex;
+  margin-left: -20px;
+}
+
+.sheet-checkbox-container {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.sheet-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.sheet-checkmark {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.sheet-checkbox-container:first-of-type {
+  padding-right: 50px;
+}
+
+.sheet-checkbox-container:last-of-type {
+  padding-left: 50px;
+}
+
+/* On mouse-over, add a grey background color */
+.sheet-checkbox-container:hover input ~ .sheet-checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.sheet-checkbox-container input:checked ~ .sheet-checkmark {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.sheet-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.sheet-checkbox-container input:checked ~ .sheet-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.sheet-checkbox-container .sheet-checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+}
+
+.sheet-text-small {
+  font-size: 11px;
+}
+
+.sheet-text-medium {
+  font-size: 20px;
+}
+
+.sheet-text-huge {
+  font-size: 40px;
+}
+
+.sheet-d20-icon {
+  background: var(--sheet-bg-white);
+  font-family:'dicefontd20';
+}
+
+
+.sheet-rolltemplate-attack,
+.sheet-rolltemplate-basic,
+.sheet-rolltemplate-description {
+  background-color: #FFF;
+}
+
+.sheet-rolltemplate-attack p,
+.sheet-rolltemplate-attack h4,
+.sheet-rolltemplate-basic p,
+.sheet-rolltemplate-basic h4,
+.sheet-rolltemplate-description p,
+.sheet-rolltemplate-description h4 {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.sheet-rolltemplate-description .sheet-rollbox-container,
+.sheet-rolltemplate-basic .sheet-rollbox-container,
+.sheet-rolltemplate-attack .sheet-rollbox-container {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.sheet-rolltemplate-basic .sheet-rollbox-header,
+.sheet-rolltemplate-description .sheet-rollbox-header,
+.sheet-rolltemplate-attack .sheet-rollbox-header {
+  border-bottom: 1px solid black;
+}
+
+.sheet-rolltemplate-basic .sheet-rollbox-header h4,
+.sheet-rolltemplate-attack .sheet-rollbox-header h4,
+.sheet-rolltemplate-description .sheet-rollbox-header h4 {
+  color: white;
+  background-color: #A1887F;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sheet-stripped tr:nth-child(even),
+.sheet-rolltemplate-attack .sheet-stripped p:nth-child(even) {
+  background-color: var(--sheet-bg-light-brown);
+}
+
+.sheet-stripped tr:nth-child(odd),
+.sheet-rolltemplate-attack .sheet-stripped p:nth-child(odd) {
+  background-color: var(--sheet-bg-white);
+}
