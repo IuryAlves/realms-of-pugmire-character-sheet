@@ -7,7 +7,7 @@
   --sheet-color-beige: #f7f3e7;
   display: grid;
   grid-gap: 5px;
-  grid-template-rows: auto 45px auto auto auto auto 65px;
+  grid-template-rows: auto 45px 250px 100px 120 145px 65px;
 }
 
 .sheet-descriptions {
@@ -103,6 +103,22 @@
   display: inline-flex;
   height: 35px;
   width: 100%;
+}
+.sheet-center {
+  padding-right: 0px;
+  text-align: center !important;
+  justify-self: center;
+  align-self: center;
+}
+
+.sheet-text-right {
+  text-align: right;
+}
+
+.sheet-content {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .sheet-center-grid {
   justify-items: center;
@@ -205,17 +221,6 @@
   width: 100%;
 }
 
-/* TODO: merge with sheet-attr */
-.sheet-center {
-  padding-right: 0px;
-  text-align: center !important;
-  justify-self: center;
-  align-self: center;
-}
-
-.sheet-text-right {
-  text-align: right;
-}
 
 
 .sheet-shield {
@@ -436,12 +441,6 @@ input {
 .sheet-header h3,
 .sheet-header label {
   color: var(--sheet-bg-white);
-}
-
-.sheet-content {
-  margin-left: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
 }
 
 .sheet-attributes > input {
