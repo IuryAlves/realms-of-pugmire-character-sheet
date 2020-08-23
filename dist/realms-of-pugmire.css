@@ -7,7 +7,7 @@
   --sheet-color-beige: #f7f3e7;
   display: grid;
   grid-gap: 5px;
-  grid-template-rows: auto 45px 250px 100px 120 145px 65px;
+  grid-template-rows: auto 45px 250px 100px 120px 125px 75px;
 }
 
 .sheet-descriptions {
@@ -120,6 +120,59 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
+.sheet-heraldic-shield {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: transparent;
+  border-radius: 0 0 70% 70%;
+  display: inline-block;
+}
+
+.sheet-heraldic-shield:before {
+  border-left: 1px solid black;
+}
+
+.sheet-heraldic-shield:before, .sheet-heraldic-shield:after {
+  position: absolute;
+  margin-top: 50%;
+  content:"";
+  left: 50%;
+  top: 0;
+  width: 50%;
+  height: 53%;
+  background: transparent;
+  border-radius: 10% 10% 0 0 / 40% 40% 0 0;
+  -webkit-transform: rotate(-61.5deg);
+  -moz-transform: rotate(-61.5deg);
+  -ms-transform: rotate(-61.5deg);
+  -o-transform: rotate(-61.5deg);
+  transform: rotate(-61.5deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+.sheet-heraldic-shield:after {
+  border-right: 1px solid black;
+  background-color: transparent;
+  left: 0;
+  -webkit-transform: rotate(61.5deg);
+  -moz-transform: rotate(61.5deg);
+  -ms-transform: rotate(61.5deg);
+  -o-transform: rotate(61.5deg);
+  transform: rotate(61.5deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin :100% 100%;
+}
 .sheet-center-grid {
   justify-items: center;
   margin-top: 10%;
@@ -156,58 +209,7 @@
   padding: 0;
 }
 
-.sheet-shield-heraldic {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-  position: relative;
-  width: 100%;
-  height: 90%;
-  background-color: transparent;
-  border-radius: 0 0 70% 70%;
-  display: inline-block;
-}
 
-.sheet-shield-heraldic:before {
-  border-left: 1px solid black;
-}
-
-.sheet-shield-heraldic:before, .sheet-shield-heraldic:after {
-  position: absolute;
-  margin-top: 50%;
-  content:"";
-  left: 50%;
-  top: 0;
-  width: 50%;
-  height: 53%;
-  background: transparent;
-  border-radius: 10% 10% 0 0 / 40% 40% 0 0;
-  -webkit-transform: rotate(-61.5deg);
-  -moz-transform: rotate(-61.5deg);
-  -ms-transform: rotate(-61.5deg);
-  -o-transform: rotate(-61.5deg);
-  transform: rotate(-61.5deg);
-  -webkit-transform-origin: 0 100%;
-  -moz-transform-origin: 0 100%;
-  -ms-transform-origin: 0 100%;
-  -o-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-}
-.sheet-shield-heraldic:after {
-  border-right: 1px solid black;
-  background-color: transparent;
-  left: 0;
-  -webkit-transform: rotate(61.5deg);
-  -moz-transform: rotate(61.5deg);
-  -ms-transform: rotate(61.5deg);
-  -o-transform: rotate(61.5deg);
-  transform: rotate(61.5deg);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  -o-transform-origin: 100% 100%;
-  transform-origin :100% 100%;
-}
 
 .sheet-input-proficiency {
   margin-left: -4px;
@@ -447,13 +449,6 @@ input {
   height: 80%;
 }
 
-.sheet-grid-3x2 {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 5em 6em 4em;
-  grid-template-rows: 5em 3em;
-}
-
 .sheet-grid-1x3 {
   display: grid;
   grid-gap: 4px;
@@ -483,7 +478,7 @@ input {
 
 .sheet-grid-1x6 {
   display: grid;
-  grid-gap: 60px;
+  grid-gap: 50px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
 }
