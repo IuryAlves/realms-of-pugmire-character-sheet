@@ -1,0 +1,53 @@
+.sheet-heraldic-shield {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: transparent;
+  border-radius: 0 0 70% 70%;
+  display: inline-block;
+}
+
+.sheet-heraldic-shield:before {
+  border-left: 1px solid black;
+}
+
+.sheet-heraldic-shield:before, .sheet-heraldic-shield:after {
+  position: absolute;
+  margin-top: 50%;
+  content:"";
+  left: 50%;
+  top: 0;
+  width: 50%;
+  height: 53%;
+  background: transparent;
+  border-radius: 10% 10% 0 0 / 40% 40% 0 0;
+  -webkit-transform: rotate(-61.5deg);
+  -moz-transform: rotate(-61.5deg);
+  -ms-transform: rotate(-61.5deg);
+  -o-transform: rotate(-61.5deg);
+  transform: rotate(-61.5deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+.sheet-heraldic-shield:after {
+  border-right: 1px solid black;
+  background-color: transparent;
+  left: 0;
+  -webkit-transform: rotate(61.5deg);
+  -moz-transform: rotate(61.5deg);
+  -ms-transform: rotate(61.5deg);
+  -o-transform: rotate(61.5deg);
+  transform: rotate(61.5deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin :100% 100%;
+}
