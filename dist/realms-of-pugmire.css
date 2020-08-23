@@ -1,26 +1,113 @@
 .sheet-main {
     /* Colors */
+    /* TODO: Move to somewhere else */;
   --sheet-bg-white: white;
   --sheet-bg-brown: #A1887F;
   --sheet-bg-light-brown: #D7CCC8;
   --sheet-color-beige: #f7f3e7;
   display: grid;
-  grid-gap: 10px;
-  grid-template-areas:
-    ". logo logo logo info info info info "
-    "attributes attributes proficiency proficiency descriptions descriptions descriptions descriptions "
-    "attributes attributes saving-throw saving-throw descriptions descriptions descriptions descriptions "
-    "attributes attributes defense defense descriptions descriptions descriptions descriptions "
-    "attributes attributes defense defense descriptions descriptions descriptions descriptions "
-    "attributes attributes defense defense skills skills skills skills "
-    "attributes attributes stamina stamina skills skills skills skills "
-    "attributes attributes dice dice skills skills skills skills "
-    "attributes attributes death-save-failure death-save-failure personality personality personality personality "
-    "rucksack rucksack rucksack rucksack  personality personality personality personality "
-    "tricks tricks tricks tricks spell-slots spell-slots spell-slots spell-slots "
-    "tricks tricks tricks tricks spell spell spell spell ";
+  grid-gap: 5px;
+  grid-template-rows: auto 45px auto auto auto auto 65px;
+}
 
-  grid-template-columns: 2em repeat(3, minmax(100px, 1fr)) 4fr;
+.sheet-descriptions {
+  grid-row: 2 / 4;
+  grid-column: 3;
+}
+
+.sheet-defense {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.sheet-personality {
+  grid-row: 7 / 10;
+  grid-column: 3;
+}
+
+.sheet-attributes {
+  grid-column: 1;
+  grid-row: 2 / 8;
+}
+
+.sheet-proficiency {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.sheet-saving-throw {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.sheet-spell {
+  grid-row: 10;
+  grid-column: 3;
+}
+
+.sheet-spell-slots {
+  grid-row: 11;
+  grid-column: 3;
+}
+
+.sheet-tricks {
+  text-align: center;
+  grid-column: 1 / 3;
+  grid-row: 10 / 12;
+
+}
+
+.sheet-logo {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.sheet-rucksack {
+  grid-column: 1 / 3;
+  grid-row: 8 / 10;
+}
+
+.sheet-info {
+  grid-column: 3;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  float: right;
+}
+
+.sheet-death-save-failure {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 7;
+}
+
+.sheet-skills {
+  grid-row: 4 / 7;
+  grid-column: 3;
+}
+
+.sheet-stamina-dice {
+  grid-row: 6;
+  grid-column: 2;
+
+}
+
+.sheet-stamina-points {
+  grid-row: 5;
+  grid-column: 2;
+}
+/* Unfortunately it is not possible to iterate over list of partials, so they have to be included manually :( */
+
+.sheet-proficiency-element {
+  display: inline-flex;
+  height: 35px;
+  width: 100%;
+}
+.sheet-center-grid {
+  justify-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .sheet-box {
@@ -130,11 +217,6 @@
   text-align: right;
 }
 
-.sheet-center-grid {
-  justify-items: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
 
 .sheet-shield {
   border: 1px solid black;
@@ -202,9 +284,6 @@
   margin-top: -7px;
 }
 
-.sheet-logo {
-  grid-area: logo;
-}
 
 .sheet-skills-table {
   width: 100%;
@@ -338,21 +417,6 @@ input {
   width: 95%;
 }
 
-.sheet-spell {
-  height: 330px;
-  grid-area: spell;
-}
-
-.sheet-spell-slots {
-  grid-area: spell-slots;
-}
-
-.sheet-tricks {
-  grid-area: tricks;
-  height: 450px;
-  text-align: center;
-}
-
 .sheet-tricks > textarea {
   height: 88%;
 }
@@ -380,59 +444,8 @@ input {
   margin-top: 5px;
 }
 
-.sheet-rucksack {
-  grid-area: rucksack;
-}
-
-.sheet-info {
-  grid-area: info;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  float: right;
-}
-
-.sheet-personality {
-  grid-area: personality;
-}
-
-.sheet-death-save-failure {
-  grid-area: death-save-failure;
-  text-align: center;
-}
-
-.sheet-skills {
-  grid-area: skills;
-  margin-top: -165px;
-}
-
-.sheet-stamina-dice {
-  grid-area: dice;
-  width: 100%;
-
-}
-
-.sheet-stamina-points {
-  grid-area: stamina;
-}
-
-.sheet-proficiency {
-  grid-area: proficiency;
-}
-.sheet-attributes {
-  grid-area: attributes;
-}
-
 .sheet-attributes > input {
   height: 80%;
-}
-
-.sheet-defense {
-  grid-area: defense;
-}
-
-.sheet-saving-throw {
-  grid-area: saving-throw;
 }
 
 .sheet-grid-3x2 {
@@ -447,12 +460,6 @@ input {
   grid-gap: 4px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 10em);
-}
-
-.sheet-grid-2x1 {
-  display: grid;
-  grid-template-columns: 1em 16em;
-  grid-template-rows: 1fr;
 }
 
 .sheet-grid-4x6 {
@@ -477,14 +484,9 @@ input {
 
 .sheet-grid-1x6 {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 60px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-}
-
-.sheet-descriptions {
-  grid-area: descriptions;
-  height: 53%;
 }
 
 .sheet-inline-checkboxes {
