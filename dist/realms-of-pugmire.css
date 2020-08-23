@@ -120,6 +120,14 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
+.sheet-grid-3x2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 5em 6em 4em;
+  grid-template-rows: 5em 3em;
+  left: 5%;
+  position: relative;
+}
 .sheet-heraldic-shield {
   border-left: 1px solid black;
   border-right: 1px solid black;
