@@ -47,7 +47,7 @@ var view = {
 var partials = {};
 var css_partials = {};
 
-var customTags = ['<%', '%>'];
+var customTags = ['[{', '}]'];
 var templateDir = __dirname + '/templates/';
 var cssDir = __dirname + '/css/';
 
