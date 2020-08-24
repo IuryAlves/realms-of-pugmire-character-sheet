@@ -9,6 +9,7 @@
 
 ```sh
 npm install
+npm run-script watch
 ```
 
 ## Building
