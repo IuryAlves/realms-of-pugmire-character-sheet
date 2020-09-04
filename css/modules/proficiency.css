@@ -3,3 +3,18 @@
   height: 35px;
   width: 100%;
 }
+
+.sheet-proficiency-element h4 {
+  align-self: center;
+  width: inherit;
+  text-align: center;
+}
+
+.sheet-input-proficiency {
+  left: -10px;
+  top: -4px;
+  text-align: center;
+  height: 39px !important;
+  width: 50.5px !important;
+  border-radius: 50px;
+}
