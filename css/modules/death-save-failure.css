@@ -1,0 +1,72 @@
+.sheet-inline-checkboxes {
+  display: inline-flex;
+  position: relative;
+  top: -18px;
+  left: 21px;
+}
+
+.sheet-checkbox-container {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.sheet-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.sheet-checkmark {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.sheet-checkbox-container:first-of-type {
+  padding-right: 80px;
+}
+
+.sheet-checkbox-container:last-of-type {
+  padding-left: 80px;
+}
+
+/* On mouse-over, add a grey background color */
+.sheet-checkbox-container:hover input ~ .sheet-checkmark {
+  background-color: black;
+}
+
+/* When the radio button is checked, add a blue background */
+.sheet-checkbox-container input:checked ~ .sheet-checkmark {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.sheet-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.sheet-checkbox-container input:checked ~ .sheet-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.sheet-checkbox-container .sheet-checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+}
