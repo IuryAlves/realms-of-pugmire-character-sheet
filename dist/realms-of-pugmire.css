@@ -6,8 +6,9 @@
   --sheet-bg-light-brown: #D7CCC8;
   --sheet-color-beige: #f7f3e7;
   display: grid;
-  grid-gap: 5px;
-  grid-template-rows: auto 45px 250px 100px 120px 125px 75px;
+  grid-gap: 8px;
+  grid-template-rows: auto 45px 250px 100px 136px 125px 75px auto auto 306px;
+  grid-template-columns: 13% 30% auto;
 }
 
 .sheet-descriptions {
