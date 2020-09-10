@@ -131,10 +131,24 @@
   text-align: right;
 }
 
+.sheet-right {
+  float: right;
+}
+
+.sheet-left {
+  float: left;
+}
+
 .sheet-content {
   margin-left: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+.sheet-flex {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .sheet-grid-3x2 {
   display: grid;
@@ -277,6 +291,107 @@
   left: 9px;
   width: 8px;
   height: 8px;
+}
+.sheet-current-stamina {
+  width: 40%;
+  padding-left: 10px;
+}
+
+.sheet-max-stamina {
+  width: 40%;
+}
+input {
+  border: 1px solid black;
+  margin: 0.1em;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  text-align: center
+}
+
+.sheet-input {
+  max-width: 100%;
+  float: right;
+  clear: both;
+}
+
+.sheet-input-small {
+  width: 30% !important;
+  margin-top: 0px;
+  padding-bottom: 1px;
+}
+
+.sheet-input-medium {
+  width: 50%;
+}
+
+.sheet-input-top {
+  margin-top: 5px;
+}
+
+.sheet-input-large {
+  width: 70% !important;
+}
+
+.sheet-input-xlarge {
+  width: 90%;
+}
+
+.sheet-input-huge {
+  width: 95%;
+}
+
+.sheet-input-transparent {
+  background-color: transparent;
+}
+
+.sheet-input-line {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  flex: 1;
+}
+
+.sheet-width-95 {
+  width: 95px;
+}
+
+.sheet-input-no-border {
+  border: none;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.sheet-input-divider {
+  transform: rotate(-65deg);
+  width: 7%;
+  height: 1px;
+  background: black;
+  bottom: -15px;
+  position: relative;
+}
+
+.sheet-double-input-left {
+  width: 45%;
+  position: relative;
+  border: 1px solid black;
+  border-right: none;
+  margin-right: -20px;
+}
+
+.sheet-double-input-right {
+  width: 45%;
+  position: relative;
+  border: 1px solid black;
+  border-left: none;
+  margin-left: -20px;
+}
+
+.sheet-double-input-left > input,
+.sheet-double-input-right > input {
+  width: 80%;
+  position: relative;
 }
 .sheet-center-grid {
   justify-items: center;
