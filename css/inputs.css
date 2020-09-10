@@ -60,3 +60,34 @@ input {
   margin-left: 0px;
   margin-right: 0px;
 }
+
+.sheet-input-divider {
+  transform: rotate(-65deg);
+  width: 7%;
+  height: 1px;
+  background: black;
+  bottom: -15px;
+  position: relative;
+}
+
+.sheet-double-input-left {
+  width: 45%;
+  position: relative;
+  border: 1px solid black;
+  border-right: none;
+  margin-right: -20px;
+}
+
+.sheet-double-input-right {
+  width: 45%;
+  position: relative;
+  border: 1px solid black;
+  border-left: none;
+  margin-left: -20px;
+}
+
+.sheet-double-input-left > input,
+.sheet-double-input-right > input {
+  width: 80%;
+  position: relative;
+}

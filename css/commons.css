@@ -9,8 +9,22 @@
   text-align: right;
 }
 
+.sheet-right {
+  float: right;
+}
+
+.sheet-left {
+  float: left;
+}
+
 .sheet-content {
   margin-left: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+.sheet-flex {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
