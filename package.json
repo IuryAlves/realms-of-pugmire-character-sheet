@@ -8,11 +8,16 @@
     "dev": {
       "patterns": ["templates"],
       "extensions": "mustache"
+    },
+    "build": {
+      "patterns": ["templates", "css"],
+      "extensions": ["mustache", "css"]
     }
   },
   "scripts": {
     "build": "./mustache.js --production realms-of-pugmire.mustache realms-of-pugmire.css.mustache dist/realms-of-pugmire.html",
     "dev": "./mustache.js --development",
-    "watch": "npm-watch dev"
+    "watch": "npm-watch build",
+    "watch-dev": "npm-watch dev"
   }
 }
