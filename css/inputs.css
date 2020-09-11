@@ -88,6 +88,6 @@ input {
 
 .sheet-double-input-left > input,
 .sheet-double-input-right > input {
-  width: 80%;
+  width: 90% !important;
   position: relative;
 }

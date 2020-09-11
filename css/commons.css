@@ -28,3 +28,12 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.sheet-box-100 {
+  position: relative;
+  width: 100%
+}
+
+.sheet-box-inherited {
+  width: inherit;
+}
