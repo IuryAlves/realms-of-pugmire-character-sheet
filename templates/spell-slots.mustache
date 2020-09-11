@@ -1,14 +1,14 @@
 <div class="sheet-spell-slots sheet-rounded-border">
   <h3 class="sheet-center sheet-header">Spell Slots</h3>
-  <div class="sheet-grid-2x2">
-    <label class="sheet-center">Current</label>
-    <label class="sheet-center">Max</label>
-    <div class="sheet-center">
-      <input class="sheet-
-      ge" type="number" name="attr_ss"/>
+  <div class="sheet-flex sheet-box-100 sheet-spell-slots-component">
+    <div class="sheet-double-input-left">
+      <input class="sheet-input-transparent sheet-input-no-border sheet-left" type="number" name="attr_ss"//>
     </div>
-    <div class="sheet-center">
-      <input class="sheet-input-transparent" type="number" name="attr_ss_max" value="@{level}*2" disabled="true" />
+    <div class="sheet-input-divider"></div>
+    <div class="sheet-double-input-right">
+      <input class="sheet-input-transparent sheet-input-no-border sheet-right" type="number" name="attr_ss_max" value="@{level}*2" disabled="true" />
     </div>
+    <label class="sheet-current-stamina sheet-center">Current</label>
+    <label class="sheet-max-stamina sheet-center">Max</label>
   </div>
 </div>
