@@ -8,7 +8,7 @@
   display: grid;
   grid-gap: 8px;
   grid-template-rows: auto 45px 250px 100px 136px 125px 75px auto auto 306px;
-  grid-template-columns: 13% 30% auto;
+  grid-template-columns: 13% 30% 50%;
 }
 
 .sheet-descriptions {
