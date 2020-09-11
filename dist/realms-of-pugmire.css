@@ -7,8 +7,8 @@
   --sheet-color-beige: #f7f3e7;
   display: grid;
   grid-gap: 8px;
-  grid-template-rows: auto 45px 250px 100px 136px 125px 75px auto auto 306px;
-  grid-template-columns: 13% 30% auto;
+  grid-template-rows: auto 45px 250px 100px 125px 125px 75px auto auto 306px;
+  grid-template-columns: 13% 30% 50%;
 }
 
 .sheet-descriptions {
@@ -148,12 +148,22 @@
 .sheet-flex {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center
 }
+
+.sheet-box-100 {
+  position: relative;
+  width: 100%
+}
+
+.sheet-box-inherited {
+  width: inherit;
+}
+
 .sheet-grid-3x2 {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 5em 6em 4em;
+  grid-template-columns: 5em 6em 5em;
   grid-template-rows: 5em 3em;
   left: 5%;
   position: relative;
@@ -265,12 +275,12 @@
 
 /* On mouse-over, add a grey background color */
 .sheet-checkbox-container:hover input ~ .sheet-checkmark {
-  background-color: black;
+  background-color: var(--sheet-bg-light-brown);
 }
 
 /* When the radio button is checked, add a blue background */
 .sheet-checkbox-container input:checked ~ .sheet-checkmark {
-  background-color: black;
+  background-color: var(--sheet-bg-light-brown);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -299,6 +309,10 @@
 
 .sheet-max-stamina {
   width: 40%;
+}
+.sheet-spell-slots-component {
+  top: 5px;
+  position: relative;
 }
 input {
   border: 1px solid black;
@@ -390,9 +404,10 @@ input {
 
 .sheet-double-input-left > input,
 .sheet-double-input-right > input {
-  width: 80%;
+  width: 80% !important;
   position: relative;
 }
+
 .sheet-center-grid {
   justify-items: center;
   margin-top: 10%;
