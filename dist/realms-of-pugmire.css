@@ -150,22 +150,11 @@
   flex-wrap: wrap;
   justify-content: center
 }
-
-.sheet-box-100 {
-  position: relative;
-  width: 100%
-}
-
-.sheet-box-inherited {
-  width: inherit;
-}
-
 .sheet-grid-3x2 {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 5em 7em 5em;
   grid-template-rows: 5em 3em;
-  left: 5%;
   position: relative;
 }
 .sheet-heraldic-shield {
@@ -367,10 +356,6 @@ input {
   flex: 1;
 }
 
-.sheet-width-95 {
-  width: 95px;
-}
-
 .sheet-input-no-border {
   border: none;
   margin-left: 0px;
@@ -406,6 +391,20 @@ input {
 .sheet-double-input-right > input {
   width: 80% !important;
   position: relative;
+}
+
+.sheet-container-100 {
+  position: relative;
+  width: 100%
+}
+
+.sheet-container-42 {
+  position: relative;
+  width: 42%
+}
+
+.sheet-container-inherited {
+  width: inherit;
 }
 
 .sheet-center-grid {
@@ -574,10 +573,6 @@ input {
 
 .sheet-textarea-rucksack {
   height: 84%;
-}
-
-.sheet-right {
-  float: right;
 }
 
 .sheet-tricks > textarea {
