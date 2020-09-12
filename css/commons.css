@@ -28,12 +28,3 @@
   flex-wrap: wrap;
   justify-content: center
 }
-
-.sheet-box-100 {
-  position: relative;
-  width: 100%
-}
-
-.sheet-box-inherited {
-  width: inherit;
-}

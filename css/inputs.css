@@ -51,10 +51,6 @@ input {
   flex: 1;
 }
 
-.sheet-width-95 {
-  width: 95px;
-}
-
 .sheet-input-no-border {
   border: none;
   margin-left: 0px;

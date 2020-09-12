@@ -1,0 +1,13 @@
+.sheet-container-100 {
+  position: relative;
+  width: 100%
+}
+
+.sheet-container-42 {
+  position: relative;
+  width: 42%
+}
+
+.sheet-container-inherited {
+  width: inherit;
+}
