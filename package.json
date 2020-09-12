@@ -15,7 +15,7 @@
     }
   },
   "scripts": {
-    "build": "./mustache.js --production realms-of-pugmire.mustache realms-of-pugmire.css.mustache dist/realms-of-pugmire.html",
+    "build": "./mustache.js --production realms-of-pugmire.html.mustache realms-of-pugmire.css.mustache dist/realms-of-pugmire.html",
     "dev": "./mustache.js --development",
     "watch": "npm-watch build",
     "watch-dev": "npm-watch dev"
