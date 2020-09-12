@@ -3,6 +3,5 @@
   grid-gap: 10px;
   grid-template-columns: 5em 7em 5em;
   grid-template-rows: 5em 3em;
-  left: 5%;
   position: relative;
 }
