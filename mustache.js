@@ -50,31 +50,25 @@ var view = {
 
 };
 
-var partials = {};
-var css_partials = {};
-
 var customTags = ['[{', '}]'];
 var templateDir = __dirname + '/templates/';
 var cssDir = __dirname + '/css/';
 
-var readTemplate = function(templateName) {
-	return fs.readFileSync(templateDir + templateName, 'utf-8');
+
+var readFiles = function(dir, pattern, suffix) {
+  var partials = {};
+  glob.sync(dir + pattern).forEach(function(file_path) {
+    filename = file_path.split('/').pop()
+    partial_name = filename.split('.')[0] + suffix
+    var template = fs.readFileSync(file_path, 'utf-8');
+    partials[partial_name] = template;
+  });
+  return partials;
 };
 
+var partials = readFiles(templateDir, '**/*.mustache', '')
+var css_partials = readFiles(cssDir, '**/*.css', '-css')
 
-fs.readdirSync(templateDir).forEach(function(filename) {
-  	partial_name = filename.split('.')[0];
-    var template = readTemplate(filename);
-    partials[partial_name] = template;
-});
-
-
-glob.sync(cssDir + '**/*.css').forEach(function(file_path) {
-  filename = file_path.split('/').pop()
-  partial_name = filename.split('.')[0] + '-css';
-  var css = fs.readFileSync(file_path, 'utf-8');
-  css_partials[partial_name] = css;
-});
 
 if (view.isProduction){
   var template = fs.readFileSync(__dirname + path.sep + baseTemplate, 'utf-8')
