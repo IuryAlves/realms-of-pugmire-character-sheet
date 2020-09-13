@@ -1,0 +1,5 @@
+{{=[{ }]=}}
+<button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{sav_thr_[{attribute_name}]_val}]]}}"></button>
+<input type="checkbox" class="sheet-center" name="attr_sav_thr_[{attribute_name}]" value="@{prof}" />
+<input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_[{attribute_name}]_val" value="@{[{mod_field_name}]} + @{sav_thr_[{attribute_name}]}" />
+<label class="sheet-center sheet-text-small">[{attribute_label}]</label>

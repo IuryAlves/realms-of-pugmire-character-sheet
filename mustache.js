@@ -18,27 +18,33 @@ var view = {
   attributes_list: [
     {
       attribute_name: "str",
-      mod_field_name: "attr_stre_mod"
+      attribute_label: "Strength",
+      mod_field_name: "stre_mod"
     },
     {
       attribute_name: "dex",
-      mod_field_name: "attr_dex_mod"
+      attribute_label: "Dexterity",
+      mod_field_name: "dex_mod"
     },
     {
       attribute_name: "con",
-      mod_field_name: "attr_cont_mod"
+      attribute_label: "Constitution",
+      mod_field_name: "con_mod"
     },
     {
       attribute_name: "int",
-      mod_field_name: "attr_int_mod"
+      attribute_label: "Intelligence",
+      mod_field_name: "int_mod"
     },
     {
       attribute_name: "wis",
-      mod_field_name: "attr_wis_mod"
+      attribute_label: "Wisdom",
+      mod_field_name: "wis_mod"
     },
     {
       attribute_name: "cha",
-      mod_field_name: "attr_cha_mod"
+      attribute_label: "Charisma",
+      mod_field_name: "cha_mod"
     }
   ]
 
@@ -61,6 +67,7 @@ fs.readdirSync(templateDir).forEach(function(filename) {
     var template = readTemplate(filename);
     partials[partial_name] = template;
 });
+
 
 glob.sync(cssDir + '**/*.css').forEach(function(file_path) {
   filename = file_path.split('/').pop()
