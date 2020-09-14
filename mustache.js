@@ -17,8 +17,8 @@ var parse = function(args) {
     .name('mustache.js')
     .description('Generate html and css files for realms-of-pugmire character sheet')
     .option('-v, --view-data <json>', 'Template data.', 'data.json')
-    .option('--html-template <html-template>', 'html template file.', 'realms-of-pugmire.html.mustache')
-    .option('--css-template <css-template>', 'css template file.', 'realms-of-pugmire.css.mustache')
+    .option('--html-template <html-template>', 'html template file.', 'src/realms-of-pugmire.html.mustache')
+    .option('--css-template <css-template>', 'css template file.', 'src/realms-of-pugmire.css.mustache')
     .option('--html-output <html-output>', 'Output file for the generated html file.', 'dist/realms-of-pugmire.html')
     .option('--css-output <css-output>', 'Output file for the generated css file.', 'dist/realms-of-pugmire.css')
 
