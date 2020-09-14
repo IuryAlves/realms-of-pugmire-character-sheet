@@ -7,7 +7,7 @@
   --sheet-color-beige: #f7f3e7;
   display: grid;
   grid-gap: 8px;
-  grid-template-rows: auto 45px 250px 100px 125px 125px 75px auto auto 306px;
+  grid-template-rows: auto 45px 250px 100px 125px 125px 75px auto auto 306px auto auto;
   grid-template-columns: 13% 30% 50%;
 }
 
@@ -96,4 +96,9 @@
 .sheet-stamina-points {
   grid-row: 5;
   grid-column: 2;
+}
+
+.sheet-legal {
+  grid-row: 12;
+  grid-column: 1 / 4;
 }

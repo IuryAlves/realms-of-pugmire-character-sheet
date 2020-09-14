@@ -26,3 +26,8 @@ npm run-script watch
 ## Reporting bugs and asking for help
 
 If you found a bug, have a feature request, is looking for guidance or anything else then please open a new issue [here](https://github.com/IuryAlves/realms-of-pugmire-character-sheet/issues/new)
+
+
+## Copyright
+
+All material (c) 2020 Onyx Path Publishing. "Pugmire" and all characters, names, places, and text herein are copyrighted by Pugsteady, LLC and are produced in conjunction with Onyx Path Publishing. Based on the Open Game License, version 1.0a.
