@@ -6,11 +6,11 @@
   },
   "watch": {
     "dev": {
-      "patterns": ["templates"],
+      "patterns": ["src/templates"],
       "extensions": "mustache"
     },
     "build": {
-      "patterns": ["templates", "css"],
+      "patterns": ["src/templates", "src/css"],
       "extensions": ["mustache", "css"]
     }
   },

@@ -14,8 +14,8 @@ var baseCss = args[4]
 var output = args[5];
 
 var customTags = ['[{', '}]'];
-var templateDir = __dirname + '/templates/';
-var cssDir = __dirname + '/css/';
+var templateDir = __dirname + '/src/templates/';
+var cssDir = __dirname + '/src/css/';
 var isDevelopment = environment === "--development"
 var isProduction = environment === "--production"
 
