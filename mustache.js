@@ -5,19 +5,26 @@ var mustache = require('mustache');
 var glob = require('glob');
 var process = require('process');
 var path = require('path');
-
-
-var args = process.argv;
-var environment = args[2]
-var baseTemplate = args[3];
-var baseCss = args[4]
-var output = args[5];
+var program = require('commander');
 
 var customTags = ['[{', '}]'];
 var templateDir = __dirname + '/src/templates/';
 var cssDir = __dirname + '/src/css/';
-var isDevelopment = environment === "--development"
-var isProduction = environment === "--production"
+
+
+var parse = function(args) {
+  program
+    .name('mustache.js')
+    .description('Generate html and css files for realms-of-pugmire character sheet')
+    .option('-v, --view-data <json>', 'Template data.', 'data.json')
+    .option('--html-template <html-template>', 'html template file.', 'realms-of-pugmire.html.mustache')
+    .option('--css-template <css-template>', 'css template file.', 'realms-of-pugmire.css.mustache')
+    .option('--html-output <html-output>', 'Output file for the generated html file.', 'dist/realms-of-pugmire.html')
+    .option('--css-output <css-output>', 'Output file for the generated css file.', 'dist/realms-of-pugmire.css')
+
+  program.parse(args);
+  return program
+};
 
 
 var readFiles = function(dir, pattern, suffix) {
@@ -31,25 +38,22 @@ var readFiles = function(dir, pattern, suffix) {
   return partials;
 };
 
-var viewData = JSON.parse(fs.readFileSync('data.json', 'utf-8'))
-var partials = readFiles(templateDir, '**/*.mustache', '')
-var css_partials = readFiles(cssDir, '**/*.css', '-css')
 
+var main = function(args) {
+  program = parse(args);
+  var viewData = JSON.parse(fs.readFileSync(program.viewData, 'utf-8'))
+  var partials = readFiles(templateDir, '**/*.mustache', '')
+  var cssPartials = readFiles(cssDir, '**/*.css', '-css')
+  var htmlTemplate = fs.readFileSync(`${__dirname}${path.sep}${program.htmlTemplate}`, 'utf-8')
+  var cssTemplate = fs.readFileSync(`${__dirname}${path.sep}${program.cssTemplate}`, 'utf-8')
+  var html = mustache.render(htmlTemplate, viewData, partials, customTags);
+  var css = mustache.render(cssTemplate, {} , cssPartials, customTags);
 
-if (isProduction){
-  var template = fs.readFileSync(__dirname + path.sep + baseTemplate, 'utf-8')
-  var cssTemplate = fs.readFileSync(__dirname + path.sep + baseCss, 'utf-8')
-  var html = mustache.render(template, viewData, partials, customTags);
-  var css = mustache.render(cssTemplate, {} , css_partials, customTags);
-  fs.writeFileSync(output, html, 'utf-8')
-  fs.writeFileSync('dist/realms-of-pugmire.css', css, 'utf-8')
-} 
-else {
-  fs.readdirSync(templateDir).forEach(function(filename) {
-    out_filename = filename.split('.')[0] + '.html'
-    console.log('Generating file: ' + out_filename);
-    var template = readTemplate(filename);
-    var html = mustache.render(template, view, partials, customTags);
-    fs.writeFileSync(__dirname + '/devel/' + out_filename, html, 'utf-8');
-  });
+  console.log(`Writing html to ${program.htmlOutput}`)
+  fs.writeFileSync(program.htmlOutput, html, 'utf-8')
+
+  console.log(`Writing css to ${program.cssOutput}`)
+  fs.writeFileSync(program.cssOutput, css, 'utf-8')
 }
+
+main(process.argv)

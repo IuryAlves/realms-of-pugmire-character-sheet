@@ -1,23 +1,24 @@
 {
   "dependencies": {
+    "commander": "^6.1.0",
     "glob": "^7.1.6",
     "mustache": "^4.0.1",
     "npm-watch": "^0.7.0"
   },
   "watch": {
-    "dev": {
-      "patterns": ["src/templates"],
-      "extensions": "mustache"
-    },
     "build": {
-      "patterns": ["src/templates", "src/css"],
-      "extensions": ["mustache", "css"]
+      "patterns": [
+        "src/templates",
+        "src/css"
+      ],
+      "extensions": [
+        "mustache",
+        "css"
+      ]
     }
   },
   "scripts": {
-    "build": "./mustache.js --production realms-of-pugmire.html.mustache realms-of-pugmire.css.mustache dist/realms-of-pugmire.html",
-    "dev": "./mustache.js --development",
-    "watch": "npm-watch build",
-    "watch-dev": "npm-watch dev"
+    "build": "./mustache.js",
+    "watch": "npm-watch build"
   }
 }
