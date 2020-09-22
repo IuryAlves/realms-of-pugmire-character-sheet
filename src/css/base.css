@@ -91,7 +91,7 @@
 }
 
 .sheet-skills-table-head th {
-  background-color: var(--sheet-bg-brown);
+  background-color: var(--sheet-main-color);
   color: var(--sheet-bg-white);
 }
 
@@ -113,7 +113,7 @@
 
 .sheet-weapons-table-description {
   color: var(--sheet-bg-white);
-  background-color: var(--sheet-bg-brown);
+  background-color: var(--sheet-main-color);
   position: sticky;
   top: 0;
 }
@@ -178,7 +178,7 @@
 }
 
 .sheet-header, .sheet-shield-title {
-  background-color: var(--sheet-bg-brown);
+  background-color: var(--sheet-main-color);
   color: var(--sheet-bg-white);
 }
 
@@ -276,7 +276,7 @@
 
 .sheet-stripped tr:nth-child(even),
 .sheet-rolltemplate-attack .sheet-stripped p:nth-child(even) {
-  background-color: var(--sheet-bg-light-brown);
+  background-color: var(--sheet-secondary-color);
 }
 
 .sheet-stripped tr:nth-child(odd),

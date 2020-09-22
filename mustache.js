@@ -21,6 +21,7 @@ var parse = function(args) {
     .option('--css-template <css-template>', 'css template file.', 'src/realms-of-pugmire.css.mustache')
     .option('--html-output <html-output>', 'Output file for the generated html file.', 'dist/realms-of-pugmire.html')
     .option('--css-output <css-output>', 'Output file for the generated css file.', 'dist/realms-of-pugmire.css')
+    .option('-t, --theme <theme>', 'Character sheet theme. Choose from pugmire, mau, pirates', 'pugmire')
 
   program.parse(args);
   return program
@@ -44,6 +45,8 @@ var main = function(args) {
   var viewData = JSON.parse(fs.readFileSync(program.viewData, 'utf-8'))
   var partials = readFiles(templateDir, '**/*.mustache', '')
   var cssPartials = readFiles(cssDir, '**/*.css', '-css')
+  var theme = readFiles(cssDir, `**/themes/${program.theme}.css`, '-css')
+  cssPartials['theme-css'] = theme[`${program.theme}-css`]
   var htmlTemplate = fs.readFileSync(`${__dirname}${path.sep}${program.htmlTemplate}`, 'utf-8')
   var cssTemplate = fs.readFileSync(`${__dirname}${path.sep}${program.cssTemplate}`, 'utf-8')
   var html = mustache.render(htmlTemplate, viewData, partials, customTags);

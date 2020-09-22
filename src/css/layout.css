@@ -1,10 +1,4 @@
 .sheet-main {
-    /* Colors */
-    /* TODO: Move to somewhere else */;
-  --sheet-bg-white: white;
-  --sheet-bg-brown: #A1887F;
-  --sheet-bg-light-brown: #D7CCC8;
-  --sheet-color-beige: #f7f3e7;
   display: grid;
   grid-gap: 8px;
   grid-template-rows: auto 45px 250px 100px 125px 125px 75px auto auto 306px auto auto;

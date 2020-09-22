@@ -43,12 +43,12 @@
 
 /* On mouse-over, add a grey background color */
 .sheet-checkbox-container:hover input ~ .sheet-checkmark {
-  background-color: var(--sheet-bg-light-brown);
+  background-color: var(--sheet-secondary-color);
 }
 
 /* When the radio button is checked, add a blue background */
 .sheet-checkbox-container input:checked ~ .sheet-checkmark {
-  background-color: var(--sheet-bg-light-brown);
+  background-color: var(--sheet-secondary-color);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
