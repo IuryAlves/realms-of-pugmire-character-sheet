@@ -21,7 +21,7 @@ var parse = function(args) {
     .option('--css-template <css-template>', 'css template file.', 'src/realms-of-pugmire.css.mustache')
     .option('--html-output <html-output>', 'Output file for the generated html file.', 'dist/realms-of-pugmire.html')
     .option('--css-output <css-output>', 'Output file for the generated css file.', 'dist/realms-of-pugmire.css')
-    .option('-t, --theme <theme>', 'Character sheet theme. Choose from pugmire, mau, pirates', 'pugmire')
+    .option('-t, --theme <theme>', 'Character sheet theme. Choose from pugmire, monarchies-of-mau, pirates', 'pugmire')
 
   program.parse(args);
   return program
@@ -42,7 +42,10 @@ var readFiles = function(dir, pattern, suffix) {
 
 var main = function(args) {
   program = parse(args);
+  console.log(`Using theme: ${program.theme}`);
+
   var viewData = JSON.parse(fs.readFileSync(program.viewData, 'utf-8'))
+  viewData['theme'] = program.theme;
   var partials = readFiles(templateDir, '**/*.mustache', '')
   var cssPartials = readFiles(cssDir, '**/*.css', '-css')
   var theme = readFiles(cssDir, `**/themes/${program.theme}.css`, '-css')
