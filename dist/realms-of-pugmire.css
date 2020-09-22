@@ -1,10 +1,11 @@
-.sheet-main {
-    /* Colors */
-    /* TODO: Move to somewhere else */;
+.sheet-theme {
   --sheet-bg-white: white;
-  --sheet-bg-brown: #A1887F;
-  --sheet-bg-light-brown: #D7CCC8;
+  --sheet-main-color: #5c4728;
+  --sheet-secondary-color: #D7CCC8;
   --sheet-color-beige: #f7f3e7;
+}
+
+.sheet-main {
   display: grid;
   grid-gap: 8px;
   grid-template-rows: auto 45px 250px 100px 125px 125px 75px auto auto 306px auto auto;
@@ -102,6 +103,7 @@
   grid-row: 12;
   grid-column: 1 / 4;
 }
+
 /* Unfortunately it is not possible to iterate over list of partials, so they have to be included manually :( */
 
 .sheet-proficiency-element {
@@ -269,12 +271,12 @@
 
 /* On mouse-over, add a grey background color */
 .sheet-checkbox-container:hover input ~ .sheet-checkmark {
-  background-color: var(--sheet-bg-light-brown);
+  background-color: var(--sheet-secondary-color);
 }
 
 /* When the radio button is checked, add a blue background */
 .sheet-checkbox-container input:checked ~ .sheet-checkmark {
-  background-color: var(--sheet-bg-light-brown);
+  background-color: var(--sheet-secondary-color);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -296,6 +298,7 @@
   width: 8px;
   height: 8px;
 }
+
 .sheet-current-stamina {
   width: 40%;
   padding-left: 10px;
@@ -505,7 +508,7 @@ input {
 }
 
 .sheet-skills-table-head th {
-  background-color: var(--sheet-bg-brown);
+  background-color: var(--sheet-main-color);
   color: var(--sheet-bg-white);
 }
 
@@ -527,7 +530,7 @@ input {
 
 .sheet-weapons-table-description {
   color: var(--sheet-bg-white);
-  background-color: var(--sheet-bg-brown);
+  background-color: var(--sheet-main-color);
   position: sticky;
   top: 0;
 }
@@ -592,7 +595,7 @@ input {
 }
 
 .sheet-header, .sheet-shield-title {
-  background-color: var(--sheet-bg-brown);
+  background-color: var(--sheet-main-color);
   color: var(--sheet-bg-white);
 }
 
@@ -690,7 +693,7 @@ input {
 
 .sheet-stripped tr:nth-child(even),
 .sheet-rolltemplate-attack .sheet-stripped p:nth-child(even) {
-  background-color: var(--sheet-bg-light-brown);
+  background-color: var(--sheet-secondary-color);
 }
 
 .sheet-stripped tr:nth-child(odd),
