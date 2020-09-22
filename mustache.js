@@ -19,8 +19,8 @@ var parse = function(args) {
     .option('-v, --view-data <json>', 'Template data.', 'data.json')
     .option('--html-template <html-template>', 'html template file.', 'src/realms-of-pugmire.html.mustache')
     .option('--css-template <css-template>', 'css template file.', 'src/realms-of-pugmire.css.mustache')
-    .option('--html-output <html-output>', 'Output file for the generated html file.', 'dist/realms-of-pugmire.html')
-    .option('--css-output <css-output>', 'Output file for the generated css file.', 'dist/realms-of-pugmire.css')
+    .option('--html-output-dir <html-output-dir>', 'Output dir for the generated html file.', 'dist')
+    .option('--css-output-dir <css-output-dir>', 'Output dir for the generated css file.', 'dist')
     .option('-t, --theme <theme>', 'Character sheet theme. Choose from pugmire, monarchies-of-mau, pirates', 'pugmire')
 
   program.parse(args);
@@ -54,12 +54,14 @@ var main = function(args) {
   var cssTemplate = fs.readFileSync(`${__dirname}${path.sep}${program.cssTemplate}`, 'utf-8')
   var html = mustache.render(htmlTemplate, viewData, partials, customTags);
   var css = mustache.render(cssTemplate, {} , cssPartials, customTags);
+  var htmlOutputFile = `${program.htmlOutputDir}/${program.theme}.html`;
+  var cssOutputFile = `${program.cssOutputDir}/${program.theme}.css`;
 
-  console.log(`Writing html to ${program.htmlOutput}`)
-  fs.writeFileSync(program.htmlOutput, html, 'utf-8')
+  console.log(`Writing html to ${htmlOutputFile}`);
+  fs.writeFileSync(`${htmlOutputFile}`, html, 'utf-8');
 
-  console.log(`Writing css to ${program.cssOutput}`)
-  fs.writeFileSync(program.cssOutput, css, 'utf-8')
+  console.log(`Writing css to ${cssOutputFile}`);
+  fs.writeFileSync(`${cssOutputFile}`, css, 'utf-8');
 }
 
 main(process.argv)

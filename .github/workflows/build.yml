@@ -22,12 +22,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build
+    - run: npm run build -- -t monarchies-of-mau
     - uses: EndBug/add-and-commit@v4
       with:
         add: 'dist'
         author_name: Pug Bot
         author_email: pugmire.bot@gmail.com
         force: true
-        message: 'Update realms-of-pugmire character sheet version'
+        message: 'Update Realms of Pugmire character sheet version'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
