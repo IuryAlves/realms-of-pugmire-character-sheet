@@ -1,0 +1,18 @@
+{{=[{ }]=}}
+<tr>
+  <td class="sheet-center sheet-weapons-dice">
+    <button type="roll" class="sheet-d20-icon" value="&{template:attack}{{character=@{character_name}}}{{attack_type=@{weapon_type_quality_[{.}]}}}{{attackname=@{weapon_attack_[{.}]}}}{{attackroll=[[1d20+@{weapon_roll_[{.}]}]]}}{{damage=[[@{weapon_dmg_[{.}]}]]}}{{criticaldamage=[[@{weapon_dmg_[{.}]} + @{weapon_dmg_[{.}]}]]}}"></button>
+  </td>
+  <td>
+    <input class="sheet-input-xlarge" type="text" name="attr_weapon_attack_[{.}]" />
+  </td>
+  <td>
+    <input class="sheet-input-xlarge" type="number" name="attr_weapon_roll_[{.}]"/>
+  </td>
+  <td>
+    <input class="sheet-input-xlarge" type="text" name="attr_weapon_dmg_[{.}]"/>
+  </td>
+  <td>
+    <input class="sheet-input-xlarge" type="text" name="attr_weapon_type_quality_[{.}]"/>
+  </td>
+</tr>
