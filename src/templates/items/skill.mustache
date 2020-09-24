@@ -1,0 +1,10 @@
+{{=[{ }]=}}
+<td>
+  <button type="roll" class="sheet-d20-icon" value="&{template:description}{{character=@{character_name}}}{{description=@{[{skill_attr}]_desc}}}{{result=[[1d20 + @{[{skill_mod_field}]} + @{[{skill_attr}]} ]]}}"></button>
+  <input type="hidden" name="attr_[{ skill_attr }]_desc" value="[{ skill_description }]">
+</td>
+<td>
+  <input type="checkbox" name="attr_[{ skill_attr }]" value="@{prof}"/>
+</td>
+<td>[{ skill_name }]</td>
+<td>[{ skill_mod }]</td>

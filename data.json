@@ -1,4 +1,166 @@
 {
+  "skills_list": [
+    [
+      {
+        "skill_mod": "Strength",
+        "skill_description": "<strong>Intimidade</strong>: This skill covers your character's ability to influence someone through threats, physical violence, and other hostile actions.",
+        "skill_name": "Intimidate",
+        "skill_attr": "intimidate",
+        "skill_mod_field": "stre_mod"
+      },
+      {
+        "skill_mod": "Dexterity",
+        "skill_description": "<strong>Balance</strong>: This skill helps your character stay upright in precarious situations, such as trying to balance on a tightrope, run across slippery ice, or stay upright on a high tree branch in a nasty storm.",
+        "skill_name": "Balance",
+        "skill_attr": "balance",
+        "skill_mod_field": "dex_mod"
+      }
+    ],
+   [
+      {
+         "skill_description":"<strong>Sneak</strong>: This skill covers your character\u2019s ability to conceal himself from enemies, slip away without being noticed, sneak past guards, or conceal something on him.",
+         "skill_attr":"sneak",
+         "skill_name":"Sneak",
+         "skill_mod":"Dexterity",
+         "skill_mod_field":"dex_mod"
+      },
+      {
+         "skill_description":"<strong>Steal</strong>: This skill covers your character\u2019s ability to take something from someone else without them noticing, as well as knowledge of bypassing locks, doors, and other barriers.",
+         "skill_attr":"steal",
+         "skill_name":"Steal",
+         "skill_mod":"Dexterity",
+         "skill_mod_field":"dex_mod"
+      }
+   ],
+   [
+      {
+         "skill_description":"<strong>Traverse</strong>: This skill covers your character\u2019s ability to use his body to overcome physical obstacles, such as by climbing them, jumping over them, or swimming through them.",
+         "skill_attr":"traverse",
+         "skill_name":"Traverse",
+         "skill_mod":"Constitution",
+         "skill_mod_field":"con_mod"
+      },
+      {
+         "skill_description":"<strong>Know Arcana</strong>: This skill represents your character\u2019s ability to recall information and lore about magic, spells, masterwork relics, and the like, as well as read the language of the Old Ones.",
+         "skill_attr":"know_arcana",
+         "skill_name":"Know Arcana",
+         "skill_mod":"Intelligence",
+         "skill_mod_field":"int_mod"
+      }
+   ],
+   [
+      {
+         "skill_description":"<strong>Know Culture</strong>: This skill helps your character understand the nuances of dog society (such as the intricacies of the royal court), or to understand a different culture entirely. While all the uplifted species speak the same core language, Know Culture will allow your dog to understand a particular culture\u2019s lexicon, secret codes, or euphemisms.",
+         "skill_attr":"know_culture",
+         "skill_name":"Know Culture",
+         "skill_mod":"Intelligence",
+         "skill_mod_field":"int_mod"
+      },
+      {
+         "skill_description":"<strong>Know History</strong>: This skill represents your character\u2019s ability to recall information about historical events, legendary people, and some of the more common myths of the lost civilizations of Man.",
+         "skill_attr":"know_history",
+         "skill_name":"Know History",
+         "skill_mod":"Intelligence",
+         "skill_mod_field":"int_mod"
+      }
+   ],
+   [
+      {
+         "skill_description":"<strong>Know Nature</strong>: This skill represents your character\u2019s ability to recall information about terrain, plants, animals, the weather, and natural cycles.",
+         "skill_attr":"know_nature",
+         "skill_name":"Know Nature",
+         "skill_mod":"Intelligence",
+         "skill_mod_field":"int_mod"
+      },
+      {
+         "skill_description":"<strong>Know Religion</strong>: This skill represents your character\u2019s ability to recall information about the Church of Man, rites and prayers, religious history, and even the religions of other nations.",
+         "skill_attr":"know_religion",
+         "skill_name":"Know Religion",
+         "skill_mod":"Intelligence",
+         "skill_mod_field":"int_mod"
+      }
+   ],
+   [
+      {
+         "skill_description":"<strong>Know Spirituality</strong>: This skill represents your character\u2019s ability to recall information about the spirituality of the Nine Lives, rites and prayers, the personal spiritual relationship with the Old Ones, and even the beliefs and religions of other species.",
+         "skill_attr":"know_spirituality",
+         "skill_name":"Know Spirituality",
+         "skill_mod":"Intelligence",
+         "skill_mod_field":"int_mod"
+      },
+      {
+         "skill_description":"<strong>Handle Animal</strong>: This skill covers your char- acter\u2019s ability to calm down a domesticated animal, assure your mount isn\u2019t spooked by nearby danger, or discern an animal\u2019s intentions.",
+         "skill_attr":"handle_animal",
+         "skill_name":"Handle Animal",
+         "skill_mod":"Wisdom",
+         "skill_mod_field":"wis_mod"
+      }
+   ],
+   [
+      {
+         "skill_description":"<strong>Heal</strong>: This skill covers your character\u2019s ability to stabilize a dying companion or diagnose an illness.",
+         "skill_attr":"heal",
+         "skill_name":"Heal",
+         "skill_mod":"Wisdom",
+         "skill_mod_field":"wis_mod"
+      },
+      {
+         "skill_description":"<strong>Notice</strong>: This skill covers your character\u2019s awareness of his surroundings, noticing sudden changes in the environment, and his overall keenness of sense. Dogs value sight and smell equally, and sometimes a distinct smell is more useful than what a dog can see.",
+         "skill_attr":"notice",
+         "skill_name":"Notice",
+         "skill_mod":"Wisdom",
+         "skill_mod_field":"wis_mod"
+      }
+   ],
+   [
+      {
+         "skill_description":"<strong>Search</strong>: This skill helps your character as he actively looks or smells for clues or hidden items, as well as deduce where they might be found. It\u2019s different from Notice because the character is actively looking instead of reacting to stimuli.",
+         "skill_attr":"search",
+         "skill_name":"Search",
+         "skill_mod":"Wisdom",
+         "skill_mod_field":"wis_mod"
+      },
+      {
+         "skill_description":"<strong>Sense Motive</strong>: This skill helps your character determine someone\u2019s true intentions. Whether uncovering a lie or predicting her actions, the dog observes his target\u2019s body language, speech patterns, and mannerisms to learn the truth.",
+         "skill_attr":"sense_motive",
+         "skill_name":"Sense Motive",
+         "skill_mod":"Wisdom",
+         "skill_mod_field":"wis_mod"
+      }
+   ],
+   [
+      {
+         "skill_description":"<strong>Survive</strong>: This skill represents your character\u2019s ability to follow tracks, hunt game, identify signs that enemies live nearby, predict the weather, or avoid natural hazards.",
+         "skill_attr":"survive",
+         "skill_name":"Survive",
+         "skill_mod":"Wisdom",
+         "skill_mod_field":"wis_mod"
+      },
+      {
+         "skill_description":"<strong>Bluff</strong>: This skill helps your character to convincingly hide the truth. Wether verbally or through his actions, he can mislead others by ambiguity or outright lies.",
+         "skill_attr":"bluff",
+         "skill_name":"Bluff",
+         "skill_mod":"Charisma",
+         "skill_mod_field":"cha_mod"
+      }
+   ],
+   [
+      {
+         "skill_description":"<strong>Perform</strong>: This skill covers how well your character can please and delight an audience, whether it's by storytelling, acting, dancing, music, or some other form of entertainment.",
+         "skill_attr":"perform",
+         "skill_name":"Perform",
+         "skill_mod":"Charisma",
+         "skill_mod_field":"cha_mod"
+      },
+      {
+         "skill_description":"<strong>Persuade</strong>: This skill represents your character\u2019s ability to influence someone through tact, socia grace, diplomacy, or a generally positive nature.",
+         "skill_attr":"persuade",
+         "skill_name":"Persuade",
+         "skill_mod":"Charisma",
+         "skill_mod_field":"cha_mod"
+      }
+   ]
+  ],
   "attributes_list": [
     {
       "attribute_name": "str",
