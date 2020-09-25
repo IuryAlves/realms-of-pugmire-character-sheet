@@ -23,6 +23,13 @@ npm run-script watch
 `npm-watch` will watch for changes in `src/templates` and `src/css` directories.
 
 
+## Themes
+
+There are currently two themes for this character sheet: Pugmire and Monarchies of Mau where Pugmire is the default theme.
+
+For using Monarchies of Mau theme, use `npm run build --  --theme monarchies-of-mau`
+
+
 ## Reporting bugs and asking for help
 
 If you found a bug, have a feature request, is looking for guidance or anything else then please open a new issue [here](https://github.com/IuryAlves/realms-of-pugmire-character-sheet/issues/new)
