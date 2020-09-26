@@ -8,6 +8,10 @@
   width: 42%
 }
 
+.sheet-container-height-95 {
+  height: 95%;
+}
+
 .sheet-container-inherited {
   width: inherit;
 }
