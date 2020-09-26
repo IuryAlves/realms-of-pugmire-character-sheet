@@ -104,32 +104,6 @@
 }
 
 
-.sheet-weapons-table {
-  width: 98%;
-  height: 95%;
-  display: inline-block;
-  overflow-y: auto;
-}
-
-.sheet-weapons-table-description {
-  color: var(--sheet-bg-white);
-  background-color: var(--sheet-main-color);
-  position: sticky;
-  top: 0;
-}
-
-.sheet-weapons-table-description:first-child {
-  border-top-left-radius: 10px;
-}
-
-.sheet-weapons-table-roll, .sheet-weapons-dice {
-  width: 10%;
-}
-
-.sheet-weapons-table-dmg {
-  width: 12%;
-}
-
 .sheet-rounded-border {
   border: 1px solid black;
   border-radius: 10px;

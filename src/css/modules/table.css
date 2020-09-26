@@ -1,0 +1,30 @@
+.sheet-table {
+  height: 95%;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sheet-table-header {
+  color: var(--sheet-bg-white);
+  background-color: var(--sheet-main-color);
+  position: sticky;
+  top: 0;
+  border-top-left-radius: 10px;
+}
+
+.sheet-table-row {
+  display: flex;
+}
+
+.sheet-table-col {
+  flex: 1;
+}
+
+.sheet-table-col-no-grow {
+  flex-grow: 0;
+}
+
+.sheet-col-header-empty {
+  min-width: 15%;
+}
