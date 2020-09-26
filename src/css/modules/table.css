@@ -1,5 +1,4 @@
 .sheet-table {
-  height: 95%;
   display: block;
   overflow-y: auto;
   overflow-x: hidden;
@@ -11,10 +10,14 @@
   position: sticky;
   top: 0;
   border-top-left-radius: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .sheet-table-row {
   display: flex;
+  align-items: center;
+  margin-top: 2px;
 }
 
 .sheet-table-col {
@@ -26,5 +29,13 @@
 }
 
 .sheet-col-header-empty {
-  min-width: 15%;
+  min-width: 7%;
+}
+
+.sheet-stripped .sheet-table-row:nth-child(even) {
+  background-color: var(--sheet-secondary-color);
+}
+
+.sheet-stripped .sheet-table-row:nth-child(odd) {
+  background-color: var(--sheet-bg-white);
 }

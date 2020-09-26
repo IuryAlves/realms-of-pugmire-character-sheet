@@ -1,23 +1,23 @@
 <div class="sheet-skills sheet-rounded-border">
-  <table class="sheet-skills-table sheet-stripped">
-    <thead class="sheet-skills-table-head">
-      <th></th>
-      <th></th>
-      <th>Skill</th>
-      <th>Attribute Modifier</th>
-      <th></th>
-      <th></th>
-      <th>Skill</th>
-      <th>Attribute Modifier</th>
-    </thead>
-    <tbody>
+  <div class="sheet-table">
+    <div class="sheet-table-header">
+      <div class="sheet-table-col sheet-col-header-empty sheet-table-col-no-grow"></div>
+      <div class="sheet-table-col sheet-col-header-empty sheet-table-col-no-grow"></div>
+      <div class="sheet-table-col sheet-left">Skill</div>
+      <div class="sheet-table-col sheet-center">Atribute Modifier</div>
+      <div class="sheet-table-col sheet-col-header-empty sheet-table-col-no-grow"></div>
+      <div class="sheet-table-col sheet-center sheet-col-header-empty sheet-table-col-no-grow"></div>
+      <div class="sheet-table-col sheet-left">Skill</div>
+      <div class="sheet-table-col sheet-center">Atribute Modifier</div>
+    </div>
+    <div class="sheet-stripped">
       [{# skills_list }]
-      <tr>
+      <div class="sheet-table-row">
         [{# . }]
           [{> skill }]
         [{/ . }]
-      </tr>
+      </div>
       [{/ skills_list }]
-    </tbody>
-  </table>
+    </div>
+  </div>
 </div>

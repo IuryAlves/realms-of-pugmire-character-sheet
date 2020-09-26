@@ -248,12 +248,10 @@
   border-top-right-radius: 10px;
 }
 
-.sheet-stripped tr:nth-child(even),
 .sheet-rolltemplate-attack .sheet-stripped p:nth-child(even) {
   background-color: var(--sheet-secondary-color);
 }
 
-.sheet-stripped tr:nth-child(odd),
 .sheet-rolltemplate-attack .sheet-stripped p:nth-child(odd) {
   background-color: var(--sheet-bg-white);
 }
