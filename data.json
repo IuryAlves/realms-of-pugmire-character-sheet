@@ -166,7 +166,7 @@
     {
       "attribute_name": "str",
       "attribute_label": "Strength",
-      "mod_field_name": "stre_mod"
+      "mod_field_name": "str_mod"
     },
     {
       "attribute_name": "dex",
