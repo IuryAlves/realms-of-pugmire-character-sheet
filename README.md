@@ -25,9 +25,11 @@ npm run-script watch
 
 ## Themes
 
-There are currently two themes for this character sheet: Pugmire and Monarchies of Mau where Pugmire is the default theme.
+There are currently two themes for this character sheet: Pugmire and Monarchies of Mau.
 
-For using Monarchies of Mau theme, use `npm run build --  --theme monarchies-of-mau`
+`npm run-script build` builds them both. If you want to use a specific theme do:
+
+`npm run build --  --theme monarchies-of-mau`
 
 
 ## Reporting bugs and asking for help
