@@ -45,7 +45,7 @@ var buildTheme = function(theme, viewData, partials, cssPartials, htmlTemplate, 
     console.log(`Using theme: ${theme}`);
     viewData['theme'] = theme;
     var cssTheme = readFiles(cssDir, `**/themes/${theme}.css`, '-css');
-    cssPartials['theme-css'] = theme[`${theme}-css`];
+    cssPartials['theme-css'] = cssTheme[`${theme}-css`];
     var html = mustache.render(htmlTemplate, viewData, partials, customTags);
     var css = mustache.render(cssTemplate, {} , cssPartials, customTags);
     var htmlOutputFile = `${htmlOutputDir}/${theme}.html`;
