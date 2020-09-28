@@ -157,23 +157,6 @@
 .sheet-stripped .sheet-table-row:nth-child(odd) {
   background-color: var(--sheet-bg-white);
 }
-.sheet-container-100 {
-  position: relative;
-  width: 100%
-}
-
-.sheet-container-42 {
-  position: relative;
-  width: 42%
-}
-
-.sheet-container-height-95 {
-  height: 95%;
-}
-
-.sheet-container-inherited {
-  width: inherit;
-}
 .sheet-proficiency-element {
   display: inline-flex;
   height: 35px;
