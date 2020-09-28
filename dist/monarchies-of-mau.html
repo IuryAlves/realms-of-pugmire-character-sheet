@@ -43,7 +43,7 @@
             </label>
           </div>
           <div class="sheet-center">
-            <input type="number" class="sheet-text-right sheet-input-no-border sheet-input-transparent" disabled="true" name="attr_stre_mod" value="floor((@{str}-10)/2)" />
+            <input type="number" class="sheet-text-right sheet-input-no-border sheet-input-transparent" disabled="true" name="attr_str_mod" value="floor((@{str}-10)/2)" />
           </div>
           <div class="sheet-shield-mod">
             <input type="number" class="sheet-shield-mod-input" name="attr_str" value="10"/>
@@ -121,7 +121,7 @@
     <div class="sheet-saving-throw-component">
           <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{sav_thr_str_val}]]}}"></button>
           <input type="checkbox" class="sheet-center" name="attr_sav_thr_str" value="@{prof}" />
-          <input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_str_val" value="@{stre_mod} + @{sav_thr_str}" />
+          <input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_str_val" value="@{str_mod} + @{sav_thr_str}" />
           <label class="sheet-center sheet-text-small">Strength</label>          <button type="roll" class="sheet-d20-icon" value="&{template:basic}{{character=@{character_name}}}{{result=[[1d20 + @{sav_thr_dex_val}]]}}"></button>
           <input type="checkbox" class="sheet-center" name="attr_sav_thr_dex" value="@{prof}" />
           <input class="sheet-input-medium sheet-center sheet-input-transparent" type="number" disabled="true" name="attr_sav_thr_dex_val" value="@{dex_mod} + @{sav_thr_dex}" />
