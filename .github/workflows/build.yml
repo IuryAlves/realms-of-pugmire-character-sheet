@@ -29,6 +29,6 @@ jobs:
         author_name: Pug Bot
         author_email: pugmire.bot@gmail.com
         force: true
-        message: 'Update Realms of Pugmire character sheet version'
+        message: 'Update Realms of Pugmire character sheet'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
