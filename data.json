@@ -7,7 +7,7 @@
         "skill_description": "<strong>Intimidade</strong>: This skill covers your character's ability to influence someone through threats, physical violence, and other hostile actions.",
         "skill_name": "Intimidate",
         "skill_attr": "intimidate",
-        "skill_mod_field": "stre_mod"
+        "skill_mod_field": "str_mod"
       },
       {
         "skill_mod": "Dexterity",
