@@ -9,6 +9,9 @@ You can get the latest html and css files [here](https://github.com/IuryAlves/re
 
 ## Developing
 
+* Install npm
+* Run:
+
 ```sh
 npm install
 npm run-script build
