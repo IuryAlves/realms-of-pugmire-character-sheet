@@ -1,5 +1,5 @@
 .sheet-center {
-  padding-right: 0px;
+  padding-right: 0;
   text-align: center !important;
   justify-self: center;
   align-self: center;
@@ -26,5 +26,5 @@
 .sheet-flex {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center
+  justify-content: center;
 }
