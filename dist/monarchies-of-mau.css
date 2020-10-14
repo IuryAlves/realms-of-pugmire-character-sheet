@@ -1,4 +1,5 @@
-.sheet-theme, .sheet-rolltemplate-theme {
+.sheet-theme,
+.sheet-rolltemplate-theme {
   --sheet-bg-white: white;
   --sheet-main-color: #17405b;
   --sheet-secondary-color: #c5cfd6;
@@ -149,7 +150,6 @@
   min-width: 25%;
 }
 
-
 .sheet-stripped .sheet-table-row:nth-child(even) {
   background-color: var(--sheet-secondary-color);
 }
@@ -157,6 +157,7 @@
 .sheet-stripped .sheet-table-row:nth-child(odd) {
   background-color: var(--sheet-bg-white);
 }
+
 .sheet-proficiency-element {
   display: inline-flex;
   height: 35px;
@@ -178,6 +179,7 @@
   border-radius: 50px;
   position: relative;
 }
+
 .sheet-center {
   padding-right: 0;
   text-align: center !important;
@@ -278,6 +280,7 @@
   left: 20px;
   top: 5px;
 }
+
 .sheet-inline-checkboxes {
   display: inline-flex;
   position: relative;
@@ -359,10 +362,12 @@
 .sheet-max-stamina {
   width: 40%;
 }
+
 .sheet-spell-slots-component {
   top: 5px;
   position: relative;
 }
+
 input {
   border: 1px solid black;
   margin: 0.1em;
@@ -683,7 +688,7 @@ input {
 .sheet-rolltemplate-attack,
 .sheet-rolltemplate-basic,
 .sheet-rolltemplate-description {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .sheet-rolltemplate-attack p,
