@@ -10,14 +10,15 @@
   display: inline-block;
 }
 
-.sheet-heraldic-shield:before {
+.sheet-heraldic-shield::before {
   border-left: 1px solid black;
 }
 
-.sheet-heraldic-shield:before, .sheet-heraldic-shield:after {
+.sheet-heraldic-shield::before,
+.sheet-heraldic-shield::after {
   position: absolute;
   margin-top: 50%;
-  content:"";
+  content: "";
   left: 50%;
   top: 0;
   width: 50%;
@@ -36,7 +37,7 @@
   transform-origin: 0 100%;
 }
 
-.sheet-heraldic-shield:after {
+.sheet-heraldic-shield::after {
   border-right: 1px solid black;
   background-color: transparent;
   left: 0;
@@ -49,5 +50,5 @@
   -moz-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
   -o-transform-origin: 100% 100%;
-  transform-origin :100% 100%;
+  transform-origin: 100% 100%;
 }
