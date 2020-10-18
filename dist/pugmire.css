@@ -132,6 +132,11 @@
   flex: 1;
 }
 
+.sheet-table-col::after {
+    content: "";
+    white-space: pre;
+}
+
 .sheet-table-col-no-grow {
   flex-grow: 0;
 }
