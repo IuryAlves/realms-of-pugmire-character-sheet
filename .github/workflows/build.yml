@@ -1,4 +1,4 @@
-name: Build project
+name: Build
 
 on:
   push:
@@ -21,6 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
+    - run: npm run csslinter
     - run: npm run build
     - run: npm run build -- -t monarchies-of-mau
     - uses: EndBug/add-and-commit@v4

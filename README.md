@@ -1,5 +1,7 @@
 # A Character sheet for Pugmire and Monarchies of Mau Role Playing Game.
 
+[![Build](https://github.com/IuryAlves/realms-of-pugmire-character-sheet/workflows/Build/badge.svg)](https://github.com/IuryAlves/realms-of-pugmire-character-sheet/actions)
+
 This is a character sheet for [Roll20](https://roll20.net/)
 
 Check for a preview [here](preview.png).
