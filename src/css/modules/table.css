@@ -26,8 +26,8 @@
 }
 
 .sheet-table-col::after {
-    content: "";
-    white-space: pre;
+  content: "";
+  white-space: pre;
 }
 
 .sheet-table-col-no-grow {

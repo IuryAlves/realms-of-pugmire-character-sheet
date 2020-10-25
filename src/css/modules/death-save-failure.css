@@ -52,19 +52,19 @@
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.sheet-checkmark:after {
+.sheet-checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.sheet-checkbox-container input:checked ~ .sheet-checkmark:after {
+.sheet-checkbox-container .sheet-checkmark::after ~ input:checked {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.sheet-checkbox-container .sheet-checkmark:after {
+.sheet-checkbox-container .sheet-checkmark::after {
   top: 9px;
   left: 9px;
   width: 8px;
