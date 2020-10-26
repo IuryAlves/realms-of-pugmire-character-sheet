@@ -3,7 +3,9 @@
     "commander": "^6.1.0",
     "glob": "^7.1.6",
     "mustache": "^4.0.1",
-    "npm-watch": "^0.7.0"
+    "npm-watch": "^0.7.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
   },
   "watch": {
     "build": {
@@ -19,6 +21,7 @@
   },
   "scripts": {
     "build": "./mustache.js --all",
-    "watch": "npm-watch build"
+    "watch": "npm-watch build",
+    "csslinter": "node_modules/stylelint/bin/stylelint.js src/css/*"
   }
 }
