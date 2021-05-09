@@ -1,0 +1,16 @@
+<script type="text/worker">
+    var setAttrIfNotNaN = function(name, value) {
+        if (! isNaN(value)) {
+          var attrs = {};
+          attrs[name] = value;
+          setAttrs(attrs);
+        }
+    };
+
+    on("change:ss_max sheet:opened", function() {
+      getAttrs(["ss"], function(values) {
+        var ss = parseInt(values.ss)
+        setAttrIfNotNaN("spell_slots", ss);
+      });
+    });
+</script>
