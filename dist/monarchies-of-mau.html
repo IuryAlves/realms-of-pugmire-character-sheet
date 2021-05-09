@@ -462,11 +462,11 @@
     <h3 class="sheet-center sheet-header">Spell Slots</h3>
     <div class="sheet-flex sheet-container-100 sheet-spell-slots-component">
       <div class="sheet-double-input-left">
-        <input class="sheet-input-transparent sheet-input-no-border sheet-left" type="number" name="attr_ss"/>
+        <input class="sheet-input-transparent sheet-input-no-border sheet-left" type="number" name="attr_spell_slots"/>
       </div>
       <div class="sheet-input-divider"></div>
       <div class="sheet-double-input-right">
-        <input class="sheet-input-transparent sheet-input-no-border sheet-right" type="number" name="attr_ss_max" value="(2 + @{con_mod}) * @{level}" disabled="true" />
+        <input class="sheet-input-transparent sheet-input-no-border sheet-right" type="number" name="attr_spell_slots_max" value="(2 + @{con_mod}) * @{level}" disabled="true" />
       </div>
       <label class="sheet-current-stamina sheet-center">Current</label>
       <label class="sheet-max-stamina sheet-center">Max</label>
@@ -722,3 +722,21 @@
     </div>
   </div>
 </rolltemplate>
+
+<!-- Sheet Workers -->
+<script type="text/worker">
+    var setAttrIfNotNaN = function(name, value) {
+        if (! isNaN(value)) {
+          var attrs = {};
+          attrs[name] = value;
+          setAttrs(attrs);
+        }
+    };
+
+    on("change:ss_max sheet:opened", function() {
+      getAttrs(["ss"], function(values) {
+        var ss = parseInt(values.ss)
+        setAttrIfNotNaN("spell_slots", ss);
+      });
+    });
+</script>
