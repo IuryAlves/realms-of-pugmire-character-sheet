@@ -41,7 +41,7 @@ input {
 }
 
 .sheet-input-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .sheet-input-line {
