@@ -184,7 +184,7 @@
 }
 
 .sheet-center {
-  padding-right: 0;
+  padding-right: 0 !important; /* Override default style from roll20 */
   text-align: center !important;
   justify-self: center;
   align-self: center;
